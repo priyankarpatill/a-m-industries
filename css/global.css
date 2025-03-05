@@ -359,9 +359,20 @@ body{
     .fade-carousel .slides .slide-8,
     .fade-carousel .slides .slide-9,
     .fade-carousel .slides .slide-10 {
-      min-height: 60vh; /* Adjust height for better mobile fit */
+      /* min-height: 60vh;  */
+      /* Adjust height for better mobile fit */
+     
+
+      height: auto; /* Let height adjust */
+      padding-top: 56.25%; /* For 16:9 aspect ratio (optional) */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
     }
   }
+  
+
   
   
   #center .carousel-indicators{
