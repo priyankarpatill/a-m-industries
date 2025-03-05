@@ -306,28 +306,27 @@ body{
   .fade-carousel .slides .slide-7,
   .fade-carousel .slides .slide-8,
   .fade-carousel .slides .slide-9,
-  .fade-carousel .slides .slide-10{
+  .fade-carousel .slides .slide-10 {
     filter: brightness(1.1) contrast(1.1);
     min-height: 800px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     image-rendering: -webkit-optimize-contrast; /* Improves image clarity in WebKit browsers */
-  image-rendering: crisp-edges; 
+    image-rendering: crisp-edges; 
   }
+  
   .fade-carousel .slides .slide-1 {
-       background-image: url(../img/222222.webp);
+    background-image: url(../img/222222.webp);
   }
   .fade-carousel .slides .slide-2 {
     background-image: url(../img/Best-Speakers-for-Home-Theater.png);
-
   }
   .fade-carousel .slides .slide-3 {
     background-image: url(../img/009.jpg);
   } 
   .fade-carousel .slides .slide-4 {
     background-image: url(../img/McIntosh\ Westchester\ IV\ Home\ Theater\ System.jpg);
-    
   }
   .fade-carousel .slides .slide-5 {
     background-image: url(../img/111111design-home-theater-wallpaper-12a132e04d266eab5a48f215f098b9b2.jpg);
@@ -347,6 +346,23 @@ body{
   .fade-carousel .slides .slide-10 {
     background-image: url(../img/HomeBanner-Music-Opt-Upload.webp);
   }
+  
+  /* ✅ Mobile Responsive Fix */
+  @media (max-width: 768px) {
+    .fade-carousel .slides .slide-1,
+    .fade-carousel .slides .slide-2,
+    .fade-carousel .slides .slide-3,
+    .fade-carousel .slides .slide-4,
+    .fade-carousel .slides .slide-5,
+    .fade-carousel .slides .slide-6,
+    .fade-carousel .slides .slide-7,
+    .fade-carousel .slides .slide-8,
+    .fade-carousel .slides .slide-9,
+    .fade-carousel .slides .slide-10 {
+      min-height: 60vh; /* Adjust height for better mobile fit */
+    }
+  }
+  
   
   #center .carousel-indicators{
     bottom:0;
