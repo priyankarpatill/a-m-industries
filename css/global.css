@@ -308,6 +308,8 @@ body{
   .fade-carousel .slides .slide-9,
   .fade-carousel .slides .slide-10 {
     filter: brightness(1.1) contrast(1.1);
+    width: 100%;
+    aspect-ratio: 16/9;
     min-height: 800px;
     background-size: cover;
     background-position: center center;
@@ -369,6 +371,7 @@ body{
       background-position: center center;
       background-repeat: no-repeat;
       position: relative;
+      aspect-ratio: 16/9;
     }
   }
   
