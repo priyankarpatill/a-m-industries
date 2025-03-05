@@ -363,7 +363,8 @@ body{
     .fade-carousel .slides .slide-10 {
       /* min-height: 60vh;  */
       /* Adjust height for better mobile fit */
-     
+      min-height: unset !important;
+      height: auto !important;
 
       height: auto; /* Let height adjust */
       padding-top: 56.25%; /* For 16:9 aspect ratio (optional) */
@@ -375,6 +376,13 @@ body{
     }
   }
   
+  @media (max-width: 768px) {
+    .fade-carousel, 
+    .fade-carousel .slides {
+      height: auto !important;
+      min-height: unset !important;
+    }
+  }
 
   
   
