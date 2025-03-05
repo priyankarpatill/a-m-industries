@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Industries</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+
+    <body>
+        <body data-spy="scroll" data-target=".navbar" data-offset="50">
+            <section id="header">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header page-scroll">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
+                         <img src="img/logoWhatsApp Image 2025-02-19 at 18.34.35_62c07136.jpg" alt="Logo" style="height: 60px; max-width: 900px; object-fit: contain;">
+                    </a>
+                        </div>
+            
+    
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="tag_menu" href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Services<span class="caret"></span></a>
+                    <ul class="dropdown-menu drop_3" role="menu">
+                      <li><a href="HomeTheatre.html">Home Theatre</a></li>
+                      <li><a class="border_none" href="Acoustic.html">Acoustic Optimization and Treatment</a></li>
+                      <li><a class="border_none" href="Soundproof.html">Soundproofing Solutions</a></li>
+                      <li><a class="border_none" href="audio.html">Professional  Audio</a></li>
+                      <!-- <li><a class="border_none" href="Maintenance.html">Maintenance and support</a></li> -->
+                    </ul>
+                 </li>
+                <li>
+                    <a class="tag_menu" href="project.html">Our Projects</a>
+                </li>
+                <li>
+                    <a class="tag_menu" href="about.html">About Us</a>
+                </li>
+                
+                
+                
+                <li>
+                    <a class="tag_menu border_none" href="Contact.html">Contact</a>
+                </li>
+                
+            </ul>
+    
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+    </nav>
+    </section>
+    
+    <style>
+        body {
+            font-family: 'Alata', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* header {
+            background-color: #f8f9fa;
+            padding: 200px 0;
+            text-align: center;
+            background-image: url("img/image9.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            line-height: 1.5;
+        } */
+        header {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100vh; /* Make header fill the full viewport height */
+        /* background-image: url("./img/WhatsApp\ Image\ 2025-03-05\ at\ 10.23.04_9bbbc07a.jpg"); */
+        /* background-image: url("./img/view-3d-cinema-theatre-room.jpg"); */
+        background-image: url("./img/Benefits-of-Installing-a-Home-Theater-System.jpg");
+
+        /* Background image */
+        background-size: cover; /* Ensure image covers the entire header */
+        background-position: center; /* Center the image */
+        margin: 0; /* Remove default margins */
+    }
+
+    header h1 {
+        margin: 0; /* Remove default margin from h1 */
+        font-size: 4rem; /* Adjust font size */
+        color: #fff; /* Set text color for better contrast */
+        text-align: left; /* Center align the text */
+        line-height: 1.5;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+    }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .service-item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            max-height: 400px;
+        }
+
+        .service-item h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        /* footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            margin-top: 40px;
+        } */
+
+        /* footer p {
+            font-size: 12px;
+            color: #777;
+        } */
+
+        .audio-services {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f8f9fa;
+        }
+
+        .section-divider {
+            border: none;
+            border-top: 1px dashed #ddd;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-item img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            
+           
+        }
+
+        .service-item h3 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 style="text-align: left;">Home Theatre</h1>
+</header>
+
+<div class="container">
+    <div class="services">
+        <div class="service-item">
+            <img src="img/audio-video.png" alt="Audio Video">
+            <h3>Audio Video Electronics</h3>
+            <p>Audio Video related electronics and accessories</p>
+        </div>
+        <div class="service-item">
+            <img src="img/accostics.png" alt="Acoustics">
+            <h3>Acoustics</h3>
+            <p>Interiors (Acoustics and visual design)</p>
+        </div>
+        <div class="service-item">
+            <img src="img/celing.png" alt="Ceiling">
+            <h3>Ceiling</h3>
+            <p>Acoustics and POP</p>
+        </div>
+        <div class="service-item">
+            <img src="img/lighting.png" alt="Lighting">
+            <h3>Lighting</h3>
+            <p>Perfect lighting for cinematic experience</p>
+        </div>
+        <div class="service-item">
+            <img src="img/flooring.png" alt="Flooring">
+            <h3>Flooring</h3>
+            <p>Taking care of feel, function, and look (carpet)</p>
+        </div>
+        <div class="service-item">
+            <img src="img/seating.png" alt="Seating">
+            <h3>Seating</h3>
+            <p>Comfort, luxury, and spacing</p>
+        </div>
+    </div>
+</div>
+
+<section class="audio-services">
+    <div class="container">
+        <hr class="section-divider">
+        <div class="row">
+            <div class="service-item">
+                <img src="img/a001.jpg" alt="Living Room Audio" style="width: 300px; height: 200px;">
+                <h3>Living Room Audio</h3>
+                <p>Turn your living room into a multiplex.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/a003.jpg" alt="Sound Bar" style="width: 300px; height: 200px;">
+                <h3>Sound Bar</h3>
+                <p>A little tweak to your TV audio can transform your TV watching experience.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/a002.jpg" alt="Stereo System" style="width: 300px; height: 200px;">
+                <h3>Stereo System</h3>
+                <p>With the main speakers, experience music that resonates within.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/Untitled-1-1.jpg" alt="Garden Theater" style="width: 300px; height: 200px;">
+                <h3>Garden Theater</h3>
+                <p>You will never have to choose between your favorite entertainment.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/Untitled-2.jpg" alt="Multi-Room Audio" style="width: 300px; height: 200px;">
+                <h3>Multi-Room Audio</h3>
+                <p>Connect all the speakers in your Home for an immersive experience.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="img/logoWhatsApp Image 2025-02-19 at 18.34.35_62c07136.jpg" alt="Company Logo">
+        </div>
+        <div class="footer-info">
+          <div class="footer-sections">
+            <div class="footer-section contact" style="text-align: left; text-align: center;">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> No. 702/C 6th Main, Nagarbhavi 2nd Stage, 11th Block, Bangalore-560072, Karnataka, INDIA</p>
+                  <p><i class="fas fa-envelope"></i> amindustries@hotmail.com</p>
+                  <p><i class="fas fa-phone"></i> +91 9886041300</p>
+            </div>
+            <div class="footer-section about">
+                <h3>About</h3>
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="about.html">About Us</a></li>
+                    <!-- <li><a href="">Services</a></li> -->
+                    <li><i class="fas fa-chevron-right"></i><a href="project.html">Projects</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li> -->
+                    <!-- <li><a href="#">Blog & News</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Clients</a></li> -->
+                <!-- </ul>
+            </div> -->
+        </div>
+        </div>
+        <!-- <div class="footer-bottom"> -->
+            <!-- <ul>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Refund and Returns Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul> -->
+            <!-- <p>&copy; 2024 Pink Noise Professionals. All rights reserved.</p> -->
+          
+        <!-- </div> -->
+    <!-- </div> -->
+    <div class="footer-section social">
+        <h3>Follow Us</h3>
+       <ul>
+        <li><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1Gv5UtaAVc/?mibextid=wwXIfr" target="_blank">Facebook</a></li>
+        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/amindustries_2008?igsh=d2t3Ynp0bGQ5NDl2&utm_source=qr " target="_blank">Instagram</a></li>
+        <li><i class="fab fa-linkedin-in"></i> <a href="#" target="_blank">LinkedIn</a></li>
+        <li><i class="fas fa-globe"></i> <a href="index.html" target="_blank">Website</a></li>
+       
+    </ul>
+    </div>
+    
+  </footer>
+  <!-- <div class="footer-bottom"> -->
+    <!-- <ul>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Shipping & Delivery</a></li>
+        <li><a href="#">Refund and Returns Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul> -->
+    <!-- <p>&copy; 2024 Pink Noise Professionals. All rights reserved.</p> -->
+  
+  <!-- </div>
+  </div> -->
+  <section id="footer_bottom"  style="background: #000; color: #fff; padding: 10px 0;">
+   <!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+      <div class="footer_bottom_1 text-center clearfix"  style="background: #000; color: #fff; padding: 10px 0;">
+       <div class="col-sm-12">
+        <p class="mgt col_5"> © 2025 Your Website Name. All Rights Reserved | Design by <a class="col_1" href="https://nijith1713.wixsite.com/shashwatha-groups">Shashwatha Groups</a></p>
+       <!-- </div> -->
+     <!-- </div> -->
+    </div>
+    
+   </div>
+  </section>
+  
+  <style>
+    .footer {
+        background: #000;
+        color: #fff;
+        padding: 40px 20px;
+        font-size: 14px;
+    }
+    .footer-container {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; */
+        display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-align: left;
+          max-width: 1200px;
+          margin: auto;
+    }
+    .footer-logo img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .footer-info {
+        /* display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+        text-align: left; */
+        flex: 1;
+    }
+    .footer-sections {
+          display: flex;
+          justify-content: space-between;
+      }
+    .footer-section {
+        margin: 20px;
+        /* flex:1; */
+    }
+    .footer-section h3 {
+        color: wheat;
+    }
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer-bottom {
+        margin-top: 20px;
+        text-align: center;
+        border-top: 1px solid #444;
+          padding-top: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+    .footer-bottom ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .footer-bottom ul li {
+        margin: 0 10px;
+    }
+    .footer-bottom ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+  .social-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-heading {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #ff4081; /* Pink shade */
+}
+
+.footer-section.social {
+    color: white;
+}
+
+.footer-section.social h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-section.social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.social ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-section.social ul li i {
+    font-size: 16px;
+    color: white; /* Pink shade */
+}
+
+.footer-section.social ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section.social ul li a:hover {
+    color: #ff4081;
+}
+  </style>
+  
+  <script>
+      $(document).ready(function() {              
+      $('i.glyphicon-thumbs-up, i.glyphicon-thumbs-down').click(function(){    
+          var $this = $(this),
+          c = $this.data('count');    
+          if (!c) c = 0;
+          c++;
+          $this.data('count',c);
+          $('#'+this.id+'-bs3').html(c);
+      });      
+      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+      });                                        
+  }); 
+  
+      </script>
+  </body>
+   
+  </html>
+  

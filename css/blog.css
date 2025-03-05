@@ -1,0 +1,235 @@
+/*
+Template Name: The Music
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.Shashwatha Groups.com/
+Licence: <a href="https://www.Shashwatha Groups.com/license">Website Template Licence</a>
+*/
+
+/*********************blog****************/
+.center_blog {
+padding-top: 70px;
+padding-bottom: 60px;
+background: #ed145b21;
+text-align: center;
+margin-top:51px;
+}
+.pages {
+margin-top: 20px;
+}
+.pages ul li {
+display: inline-block;
+margin: 0 2px;
+width: 45px;
+height: 45px;
+line-height: 45px;
+background: #ed145b21;
+text-align: center;
+border-radius: 3px;
+}
+.pages ul li a {
+display: block;
+color: #333;
+}
+.pages ul li:hover{
+ background: #ed145b;
+ }
+.pages ul li:hover a{
+ color: #fff;
+ }
+.act{
+  background:#ed145b!important;
+ }
+.act a{
+ color: #fff!important;
+ }
+ 
+.blog_h1{
+margin-top:30px; 
+ }
+#blog{
+padding-top:40px;
+padding-bottom:40px; 
+ }
+.blog_1li .nav_1 li{
+display:inline-block; 
+margin-bottom:8px;
+ }
+.blog_1li .nav_1 li a{
+background:#ed145b21;
+padding:10px;
+display:block; 
+ }
+.blog_1li .nav_1 li a:hover{
+background:#ed145b;
+color:#fff;
+ }
+.blog_1li h5 a {
+margin-right: 10px;
+}
+.blog_1li h5 a i{
+margin-right: 5px;
+}
+.blog_1li1l img{
+float:left;
+margin-right:20px; 
+ }
+.blog_1li{
+box-shadow: 0px 0px 7px 0px rgb(83 95 159 / 15%);
+padding:20px; 
+ }
+.blog_1l{
+margin-top:30px; 
+ }
+.blog_1li1l h4{
+margin-top:5px!important; 
+ }
+.shop_1r1 h6 i{
+vertical-align:middle;
+margin-right:5px;  
+  }
+  
+.blog_dt1 blockquote {
+border-color: #ed145b;
+background:#ed145b21;
+}
+.blog_dt1 h6 i{
+color:#999;
+margin-right:5px;
+vertical-align:middle; 
+ }
+.blog_dt3i .form-control {
+border-color:#ed145b2e; 
+box-shadow:none;
+font-size:18px;
+height:50px;
+border-radius:0;
+margin-top:15px;
+ }
+.blog_dt3i .form_1 {
+ height:150px;
+ }
+ 
+.shop_1l1r .form-control{
+background:#f4f4f4; 
+height:50px;
+border:none;
+box-shadow:none;
+border-radius:0;
+font-size:18px;
+ }
+.prod_h1{
+margin-top:30px; 
+ }
+
+.shop_1r1 .form-control {
+height: 48px;
+font-size: 18px;
+border-color: #ed145b2e; 
+box-shadow: none;
+border-radius: 0;
+}
+.shop_1r1 .input-group .btn {
+background: #ed145b;
+margin-left: 0!important;
+padding: 10.5px 20px;
+font-size: 18px;
+border-radius: 0;
+border-color: #ed145b;
+}
+.shop_1r1{
+box-shadow: 0px 0px 7px 0px rgb(83 95 159 / 15%);
+padding:30px 15px; 
+border-top:5px solid #ed145b;
+margin-top:30px;
+ }
+.shop_1r1 h6 {
+border-bottom: 1px solid #ed145b2e; 
+padding-bottom: 15px;
+}
+.shop_1r1 ul li {
+display: inline-block;
+margin-top: 5px;
+}
+.shop_1r1 ul li a {
+padding: 8px 8px 10px 8px;
+display: block;
+background: #ed145b21;
+}
+.shop_1r1 ul li a:hover {
+background:#ed145b;
+color:#fff;
+}
+.shop_1r2 .form-control {
+height: 48px;
+font-size: 18px;
+border-color: #ed145b2e;
+box-shadow: none;
+border-radius: 0;
+margin-top:15px;
+}
+.shop_1r2{
+box-shadow: 0px 0px 7px 0px rgb(83 95 159 / 15%);
+padding:30px 15px; 
+border-top:5px solid #ed145b;
+margin-top:30px;
+ }
+#myCarousel1 img{
+margin-left:auto;
+margin-right:auto; 
+ }
+.hr_1 {
+border-color: #ed145b;
+border-width: 5px;
+width: 70px;
+}
+.mgl {
+margin-left: 0!important;
+}
+/*********************blog_end****************/
+
+
+@media screen and (max-width : 767px){
+#blog{
+text-align:center; 
+ }
+.blog_1li1l img {
+float: none;
+margin-right:0;
+}
+.blog_1li1r  {
+margin-top:10px;
+text-align:center;
+}
+.blog_1r {
+margin-top:15px; 
+ }
+.blog_1r .shop_1r1 h6{
+text-align:center;  
+ }
+.blog_h1i {
+margin-bottom:10px; 
+ }
+.center_blog{
+margin-top:0; 
+ }
+.pages ul li{
+margin-bottom:5px; 
+ }
+.hr_1 {
+margin-left: auto!important;
+}
+}
+@media (min-width:768px) and (max-width:991px) {
+
+ }
+ 
+@media (min-width:992px) and (max-width:1200px) {
+
+  }
+@media (min-width:1201px) and (max-width:1350px) {
+
+ }
+
+
+
