@@ -310,13 +310,19 @@ body{
     filter: brightness(1.1) contrast(1.1);
     width: 100%;
     aspect-ratio: 16/9;
-    min-height: 800px;
+    /* min-height: 800px; */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     image-rendering: -webkit-optimize-contrast; /* Improves image clarity in WebKit browsers */
     image-rendering: crisp-edges; 
   }
+  /* Remove min-height from desktop */
+.fade-carousel, 
+.fade-carousel .slides {
+  width: 100%;
+  max-width: 100%;
+}
   
   .fade-carousel .slides .slide-1 {
     background-image: url(../img/222222.webp);
@@ -363,8 +369,7 @@ body{
     .fade-carousel .slides .slide-10 {
       /* min-height: 60vh;  */
       /* Adjust height for better mobile fit */
-      min-height: unset !important;
-      height: auto !important;
+     
 
       height: auto; /* Let height adjust */
       padding-top: 56.25%; /* For 16:9 aspect ratio (optional) */
@@ -374,7 +379,15 @@ body{
       position: relative;
       aspect-ratio: 16/9;
     }
+    .fade-carousel, 
+    .fade-carousel .slides {
+      height: auto;
+    }
   }
+  
+
+
+  
   
   @media (max-width: 768px) {
     .fade-carousel, 
