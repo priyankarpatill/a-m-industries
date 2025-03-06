@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AM Industries</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/global.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -276,6 +279,66 @@ input[type="radio"] {
     font-size: 24px;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+/* Fix double viewport */
+meta[name="viewport"]:nth-of-type(2) {
+  display: none;
+}
+
+/* Slider responsiveness */
+@media (max-width: 768px) {
+  .slider {
+    height: 300px;
+  }
+
+  .slide img {
+    object-fit: cover;
+    height: 300px;
+  }
+
+  .video-text {
+    top: 30%;
+    left: 5%;
+    font-size: 16px;
+  }
+
+  .video-text h2 {
+    font-size: 20px;
+  }
+
+  .video-text p {
+    font-size: 14px;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+}
+
+/* For extra small devices */
+@media (max-width: 480px) {
+  .slider {
+    height: 200px;
+  }
+
+  .slide img {
+    height: 200px;
+  }
+
+  .navbar-brand img {
+    height: 30px;
+  }
+}
+
   </style>
 <section id="albums">
 	<!-- <section id="services" class="services-section">
