@@ -43,28 +43,28 @@
                 </a>
             </div>
 
-            <!-- Desktop Navigation Menu -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="tag_menu" href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
-                            Services <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu drop_3" role="menu">
-                            <li><a href="HomeTheatre.html">Home Theatre</a></li>
-                            <li><a href="Acoustic.html">Acoustic Optimization and Treatment</a></li>
-                            <li><a href="Soundproof.html">Soundproofing Solutions</a></li>
-                            <li><a class="border_none" href="audio.html">Professional Audio</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="tag_menu" href="project.html">Our Projects</a></li>
-                    <li><a class="tag_menu" href="about.html">About Us</a></li>
-                    <li><a class="tag_menu border_none" href="Contact.html">Contact</a></li>
-                </ul>
-            </div>
+           <!-- Desktop Navigation Menu -->
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="tag_menu" href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                        Services <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu drop_3" role="menu">
+                        <li><a href="HomeTheatre.html">Home Theatre</a></li>
+                        <li><a href="Acoustic.html">Acoustic Optimization and Treatment</a></li>
+                        <li><a href="Soundproof.html">Soundproofing Solutions</a></li>
+                        <li><a class="border_none" href="audio.html">Professional Audio</a></li>
+                    </ul>
+                </li>
+                <li><a class="tag_menu" href="project.html">Our Projects</a></li>
+                <li><a class="tag_menu" href="about.html">About Us</a></li>
+                <li><a class="tag_menu border_none" href="Contact.html">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 </section>
 
 <!-- Mobile Sidebar Menu -->
@@ -1373,6 +1373,22 @@ by <a class="col_1" href="#">Ante Dapibus</a> on June 24, 2014</p>
 
 
 
+
+
+
+.dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 </style>
 
 <script>
@@ -1392,19 +1408,6 @@ by <a class="col_1" href="#">Ante Dapibus</a> on June 24, 2014</p>
 }); 
 
 
- // Toggle Sidebar
- function toggleSidebar() {
-        const sidebar = document.getElementById("sidebar");
-        sidebar.classList.toggle("active");
-    }
-
-    // Toggle Dropdown inside Sidebar
-    function toggleDropdown(event) {
-        event.preventDefault();
-        const dropdown = event.target.parentElement;
-        dropdown.classList.toggle("active");
-    }
-
 
     
 
@@ -1416,7 +1419,25 @@ function toggleDropdown(event) {
     event.preventDefault();
     event.target.nextElementSibling.classList.toggle("open");
 }
+
+
+
+
+
+    $(document).ready(function () {
+        $(".dropdown").on("click", function () {
+            $(this).find(".dropdown-menu").slideToggle();
+        });
+    });
+
+
 	</script>
+    <!-- jQuery (Required for Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
  
 </html>
