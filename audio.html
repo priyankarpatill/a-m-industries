@@ -65,52 +65,145 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <section id="header">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header page-scroll">
-                    <!-- Brand Logo -->
-                    <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
-                        <img src="img/logoWhatsApp Image 2025-02-19 at 18.34.35_62c07136.jpg" alt="Logo" 
-                             style="height: 60px; max-width: 900px; object-fit: contain;">
-                    </a>
-                    
-                    <!-- Sidebar Toggle Button (Aligned Right) -->
-                    <button type="button" class="navbar-toggle" onclick="toggleSidebar()">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
+    <!-- Navigation Section -->
+  <!-- Navigation Section -->
+  <section id="header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <!-- Mobile Menu Toggle Button -->
+                <button type="button" class="navbar-toggle" onclick="toggleSidebar()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
+                    <img src="img/logoWhatsApp Image 2025-02-19 at 18.34.35_62c07136.jpg" 
+                         alt="Logo" 
+                         style="height: 60px; max-width: 900px; object-fit: contain;">
+                </a>
             </div>
-        </nav>
-    </section>
-    
-    <!-- Sidebar Menu (Appears from Right Side) -->
-    <div id="sidebar" class="sidebar">
-        <button class="close-btn" onclick="toggleSidebar()">×</button>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" onclick="toggleDropdown(event)">Services ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="HomeTheatre.html">Home Theatre</a></li>
-                    <li><a href="Acoustic.html">Acoustic Optimization</a></li>
-                    <li><a href="Soundproof.html">Soundproofing Solutions</a></li>
-                    <li><a href="audio.html">Professional Audio</a></li>
+
+            <!-- Desktop Navigation Menu -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="tag_menu" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Services <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu drop_3" role="menu">
+                            <li><a href="HomeTheatre.html">Home Theatre</a></li>
+                            <li><a href="Acoustic.html">Acoustic Optimization and Treatment</a></li>
+                            <li><a href="Soundproof.html">Soundproofing Solutions</a></li>
+                            <li><a class="border_none" href="audio.html">Professional Audio</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="tag_menu" href="project.html">Our Projects</a></li>
+                    <li><a class="tag_menu" href="about.html">About Us</a></li>
+                    <li><a class="tag_menu border_none" href="Contact.html">Contact</a></li>
                 </ul>
-            </li>
-            <li><a href="project.html">Our Projects</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </div>
-    
-    
             </div>
-        </nav>
-    </section>
+        </div>
+    </nav>
+</section>
+
+<!-- Mobile Sidebar Menu -->
+<div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">Services ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="HomeTheatre.html">Home Theatre</a></li>
+                <li><a href="Acoustic.html">Acoustic Optimization</a></li>
+                <li><a href="Soundproof.html">Soundproofing Solutions</a></li>
+                <li><a href="audio.html">Professional Audio</a></li>
+            </ul>
+        </li>
+        <li><a href="project.html">Our Projects</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<style>
+    /* Sidebar Navigation (For Mobile) */
+
+/* Sidebar (Mobile) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 2000;
+}
+
+.sidebar.open {
+    right: 0; /* Slide in */
+}
+
+/* Sidebar Menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+
+}
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.dropdown-menu.open {
+    display: block;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Hide Top Navbar on Mobile */
+@media (max-width: 768px) {
+    .navbar-default .navbar-collapse {
+        display: none;
+    }
+}
+.sidebar a, 
+.sidebar .dropdown-menu a {
+    font-size: 16px; /* Adjust the size as needed */
+}
+
+
+</style>
 
     <!-- Acoustic Treatment Section -->
     <section class="acoustic-section">
@@ -139,84 +232,6 @@
                     border-radius: 8px; /* Optional: Adds rounded corners */
                 }
 
-
-
-                .sidebar a, 
-.sidebar .dropdown-menu a {
-    font-size: 16px; /* Adjust the size as needed */
-}
-       
-
- /* Sidebar Styling (From Right Side) */
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: -250px; /* Start Hidden on Right */
-    background: white;
-    color: white;
-    padding-top: 60px;
-    transition: 0.3s ease-in-out;
-    z-index: 1000;
-}
-
-/* Active Sidebar (Moves to Right Side) */
-.sidebar.active {
-    right: 0;
-}
-
-/* Sidebar List Styling */
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #555;
-}
-
-.sidebar ul li a {
-    color: black;
-    text-decoration: none;
-    display: block;
-}
-
-/* Close Button */
-.close-btn {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-/* Dropdown Styling */
-.dropdown-menu {
-    display: none;
-    list-style: none;
-    background: #444;
-    padding-left: 20px;
-}
-
-.dropdown-menu li {
-    padding: 10px 0;
-}
-
-.dropdown-menu li a {
-    color: #ddd;
-    text-decoration: none;
-}
-
-/* Show Dropdown when Active */
-.dropdown.active .dropdown-menu {
-    display: block;
-}
 
 
               </style>
@@ -517,19 +532,16 @@ It’s more than technology—it’s the art of crafting sound that inspires, en
 
       
      
-    // Toggle Sidebar
-    function toggleSidebar() {
-        const sidebar = document.getElementById("sidebar");
-        sidebar.classList.toggle("active");
-    }
+   
 
-    // Toggle Dropdown inside Sidebar
-    function toggleDropdown(event) {
-        event.preventDefault();
-        const dropdown = event.target.parentElement;
-        dropdown.classList.toggle("active");
-    }
+      function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("open");
+}
 
+function toggleDropdown(event) {
+    event.preventDefault();
+    event.target.nextElementSibling.classList.toggle("open");
+}
 
 
           </script>
