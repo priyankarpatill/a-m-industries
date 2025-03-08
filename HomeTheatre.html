@@ -15,60 +15,136 @@
 
     <body>
         <body data-spy="scroll" data-target=".navbar" data-offset="50">
-            <section id="header">
-                <nav class="navbar navbar-default navbar-fixed-top">
-                    <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header page-scroll">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
-                         <img src="img/logoWhatsApp Image 2025-02-19 at 18.34.35_62c07136.jpg" alt="Logo" style="height: 60px; max-width: 900px; object-fit: contain;">
+           
+    <!-- Navigation Section -->
+    <section id="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <!-- Brand Logo -->
+                    <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
+                        <img src="img/logoWhatsApp Image 2025-02-19 at 18.34.35_62c07136.jpg" alt="Logo" 
+                             style="height: 60px; max-width: 900px; object-fit: contain;">
                     </a>
-                        </div>
-            
-    
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="tag_menu" href="index.html">Home</a>
-                </li>
-                <li class="dropdown">
-                    <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Services<span class="caret"></span></a>
-                    <ul class="dropdown-menu drop_3" role="menu">
-                      <li><a href="HomeTheatre.html">Home Theatre</a></li>
-                      <li><a class="border_none" href="Acoustic.html">Acoustic Optimization and Treatment</a></li>
-                      <li><a class="border_none" href="Soundproof.html">Soundproofing Solutions</a></li>
-                      <li><a class="border_none" href="audio.html">Professional  Audio</a></li>
-                      <!-- <li><a class="border_none" href="Maintenance.html">Maintenance and support</a></li> -->
-                    </ul>
-                 </li>
-                <li>
-                    <a class="tag_menu" href="project.html">Our Projects</a>
-                </li>
-                <li>
-                    <a class="tag_menu" href="about.html">About Us</a>
-                </li>
-                
-                
-                
-                <li>
-                    <a class="tag_menu border_none" href="Contact.html">Contact</a>
-                </li>
-                
-            </ul>
-    
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-    </nav>
+                    
+                    <!-- Sidebar Toggle Button (Aligned Right) -->
+                    <button type="button" class="navbar-toggle" onclick="toggleSidebar()">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
     </section>
     
+    <!-- Sidebar Menu (Appears from Right Side) -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown(event)">Services ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="HomeTheatre.html">Home Theatre</a></li>
+                    <li><a href="Acoustic.html">Acoustic Optimization</a></li>
+                    <li><a href="Soundproof.html">Soundproofing Solutions</a></li>
+                    <li><a href="audio.html">Professional Audio</a></li>
+                </ul>
+            </li>
+            <li><a href="project.html">Our Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    
+            </div>
+        </nav>
+    </section>
+    <style>
+        
+        .sidebar a, 
+.sidebar .dropdown-menu a {
+    font-size: 16px; /* Adjust the size as needed */
+}
+       
+
+ /* Sidebar Styling (From Right Side) */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start Hidden on Right */
+    background: white;
+    color: white;
+    padding-top: 60px;
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Active Sidebar (Moves to Right Side) */
+.sidebar.active {
+    right: 0;
+}
+
+/* Sidebar List Styling */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    background: #444;
+    padding-left: 20px;
+}
+
+.dropdown-menu li {
+    padding: 10px 0;
+}
+
+.dropdown-menu li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* Show Dropdown when Active */
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+
+              
+    </style>
     <style>
         body {
             font-family: 'Alata', sans-serif;
@@ -561,6 +637,19 @@
       });                                        
   }); 
   
+
+   // Toggle Sidebar
+   function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("active");
+    }
+
+    // Toggle Dropdown inside Sidebar
+    function toggleDropdown(event) {
+        event.preventDefault();
+        const dropdown = event.target.parentElement;
+        dropdown.classList.toggle("active");
+    }
       </script>
   </body>
    
