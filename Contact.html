@@ -170,6 +170,9 @@
 </style>
 
 
+
+
+
 <section id="Contact">
     <div class="container">
         <h1>Contact <span class="highlight" style="color: black;">Us</span></h1>
@@ -177,13 +180,62 @@
         <div class="Contact-wrapper">
             <!-- Left Side - Contact Form -->
             <div class="Contact-form">
-                <form action="#" method="POST">
-                    <input type="text" placeholder="Your name" required>
-                    <input type="email" placeholder="Your email" required>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea placeholder="Your message (optional)" rows="5"></textarea>
-                    <button type="submit">SEND MESSAGE</button>
-                </form>
+                <!-- <form action="https://formspree.io/f/mldjevpb" method="POST"> -->
+                    <form onsubmit="sendEmail(event)">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message" required></textarea>
+                        <button type="submit">SEND MESSAGE</button>
+                    </form>
+                    
+
+                    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("rpatilpriyanka98@gmail.com"); // Replace with your EmailJS public key
+    })();
+</script>
+
+                    <script>
+                        function sendEmail(event) {
+                            event.preventDefault(); // Prevent form submission
+                    
+                            const templateParams = {
+                                name: document.getElementById('name').value,
+                                email: document.getElementById('email').value,
+                                subject: document.getElementById('subject').value,
+                                message: document.getElementById('message').value
+                            };
+                    
+                            emailjs.send('service_d8vebyx', 'template_p0pyyfo', templateParams)
+                                .then((response) => {
+                                    alert('Message sent successfully!');
+                                    document.getElementById('contact-form').reset(); // Reset the form
+                                }, (error) => {
+                                    alert('Failed to send message. Please try again.');
+                                    console.error(error);
+                                });
+                        }
+                    </script>
+
+                <!-- <script src=" https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    function sendEmail(){
+                        Email.send({
+                            Host:"smtp.gmail.com",
+                            Username:"rpatilpriyanka98@gmail.com",
+                            Password: '9884@9884__'
+                            To :'priyankarpatilpatil@gmail.com',
+                            From: document.getElementById('email').value,
+                            Subject :"New contact fprm enquiry",
+                            Body:"And this is the body"
+                        }).then(
+                            message=>alert(message)
+                    );
+                        
+                    }
+                </script> -->
                 <p><strong>Warehouse Address:</strong><br>
                     No. 2874, 8th E Cross, 14th E Main, R P C Layout, Vijayanagar, 
                     Bangalore-560040, Karnataka, INDIA</p>
@@ -199,6 +251,26 @@
                     </div>
                </div>
                
+               <!-- <script>
+                document.querySelector("form").addEventListener("submit", async function (event) {
+                  event.preventDefault(); // Prevent default form submission
+              
+                  let formData = new FormData(this);
+                  let response = await fetch(this.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: { "Accept": "application/json" }
+                  });
+              
+                  if (response.ok) {
+                    alert("Thank you! Your message has been sent.");
+                    this.reset(); // Clear the form
+                  } else {
+                    alert("Oops! Something went wrong.");
+                  }
+                });
+              </script> -->
+              
 
             <!-- Right Side - Contact Info & Map -->
             <!-- <div class="contact-container">
@@ -357,7 +429,7 @@
      <div class="row">
        <div class="footer_bottom_1 text-center clearfix">
         <div class="col-sm-12">
-         <p class="mgt col_5"> © 2025 Your Website Name. All Rights Reserved | Design by <a class="col_1" href="https://nijith1713.wixsite.com/shashwatha-groups">Shashwatha Groups</a></p>
+         <p class="mgt col_5"> © 2025 A M Industries. All Rights Reserved | Designed by  <a class="col_1" href="https://nijith1713.wixsite.com/shashwatha-groups">Shashwatha Groups</a></p>
         </div>
       </div>
      </div>
@@ -392,6 +464,44 @@ function toggleDropdown(event) {
 }
    
        </script>
+
+
+
+
+<a href="https://wa.me/919886041300" target="_blank" class="whatsapp-icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+
+
+
+<style>
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .whatsapp-icon:hover {
+        transform: scale(1.1);
+    }
+
+    .whatsapp-icon img {
+        width: 35px;
+        height: 35px;
+    }
+</style>
+
    </body>
     
    </html>
