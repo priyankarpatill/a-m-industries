@@ -190,22 +190,62 @@
         <div class="Contact-wrapper">
             <!-- Left Side - Contact Form -->
             <div class="Contact-form">
-                <!-- <form action="https://formspree.io/f/mldjevpb" method="POST"> -->
+                <!-- <form action="https://formspree.io/f/mldjevpb" method="POST">
                     <form onsubmit="sendEmail(event)">
                         <input type="text" name="name" id="name" placeholder="Your name" required>
                         <input type="email" name="email" id="email" placeholder="Your email" required>
                         <input type="text" name="subject" id="subject" placeholder="Subject" required>
                         <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter message" required></textarea>
-                        <button type="submit">SEND MESSAGE</button>
-                    </form>
-                    
+                        <button type="submit" style="display: none;">SEND MESSAGE</button>
+                    </form> -->
+                    <script src="./js/scripts.js"></script>
 
+             
+             
+             
+             
                     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
+
+
+
+
+
+                    <form action="#">
+                        <div class="dbl-field">
+                          <div class="field">
+                            <input type="text" name="name" placeholder="Enter your name" >
+                            <!-- <i class="fas fa-user"></i> -->
+                          </div>
+                          <div class="field">
+                            <input type="email" name="email" placeholder="Enter your email" >
+                            <!-- <i class="fas fa-envelope"></i> -->
+                          </div>
+                        </div>
+                        <div class="dbl-field">
+                          <div class="field">
+                            <input type="text" name="phone" placeholder="Enter your phone">
+                            <!-- <i class="fas fa-phone-alt"></i> -->
+                          </div>
+                          <!-- <div class="field">
+                            <input type="text" name="website" placeholder="Enter your website">
+                            <i class="fas fa-globe"></i>
+                          </div> -->
+                        </div>
+                        <div class="message">
+                          <textarea name="message" placeholder="Write your message" ></textarea>
+                          <!-- <i class="material-icons">message</i> -->
+                        </div>
+                        <div class="button-area">
+                          <button type="submit" >Send Message</button>
+                          <span style="display: none;">Sending your message...</span>
+                        </div>
+                      </form>
+                      
+<!-- <script>
     (function() {
         emailjs.init("rpatilpriyanka98@gmail.com"); // Replace with your EmailJS public key
     })();
-</script>
+</script>   
 
                     <script>
                         function sendEmail(event) {
@@ -227,7 +267,19 @@
                                     console.error(error);
                                 });
                         }
-                    </script>
+                    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <!-- <script src=" https://smtpjs.com/v3/smtp.js"></script>
                 <script>
@@ -301,16 +353,34 @@
                    <div class="footer-section social">
                     <h3 style="font-size: 19px;">Follow Us</h3>
                    <a>
-                <a style="color: red; "><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1Gv5UtaAVc/?mibextid=wwXIfr" target="_blank" style="color: black; ">Facebook</a></li>
-                <a style="color: red;"><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/amindustries_2008?igsh=d2t3Ynp0bGQ5NDl2&utm_source=qr " target="_blank" style="color: black;">Instagram</a></li>
-                <a style="color: red;"><i class="fab fa-linkedin-in"></i> <a href="#" target="_blank" style="color: black;">LinkedIn</a></li>
-                <a style="color: red;"><i class="fas fa-globe"></i> <a href="https://www.yourwebsite.com" target="_blank" style="color: black;">Website</a></li>
-               
+                    <table>
+                        <tr>
+                            <td style="padding: 10px;">
+                                <a style="color: red;"><i class="fab fa-facebook-f"></i></a> 
+                                <a href="https://www.facebook.com/share/1Gv5UtaAVc/?mibextid=wwXIfr" target="_blank" style="color: black;">Facebook</a>
+                            </td>
+                            <td style="padding: 10px;">
+                                <a style="color: red;"><i class="fab fa-instagram"></i></a> 
+                                <a href="https://www.instagram.com/amindustries_2008?igsh=d2t3Ynp0bGQ5NDl2&utm_source=qr" target="_blank" style="color: black;">Instagram</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">
+                                <a style="color: red;"><i class="fab fa-linkedin-in"></i></a> 
+                                <a href="#" target="_blank" style="color: black;">LinkedIn</a>
+                            </td>
+                            <td style="padding: 10px;">
+                                <a style="color: red;"><i class="fas fa-globe"></i></a> 
+                                <a href="https://www.yourwebsite.com" target="_blank" style="color: black;">Website</a>
+                            </td>
+                        </tr>
+                    </table>
+                    
             
                 </div>
                 
                   
-                   <p><strong>Showroom Address:</strong><br>
+                   <!-- <p style="color: black;"><strong style="color: black;">Showroom Address:</strong><br>
                     No. 702/C 6th Main, Nagarbhavi 2nd Stage, 11th Block, Bangalore-560072, Karnataka, INDIA</p>
                  <div class="map">
                      <iframe 
@@ -321,9 +391,59 @@
                          allowfullscreen="" 
                          loading="lazy">
                      </iframe>
-                 </div>
-                 
-   
+                 </div> -->
+                
+                    <!-- Yellow highlight -->
+                    <!-- <div style="
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: rgba(255, 255, 0, 0.7);
+                        border-radius: 50%;
+                        width: 120px;
+                        height: 120px;
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+                        z-index: 10;
+                        pointer-events: none;
+                    ">
+                    </div> -->
+                
+                    <!-- Clickable Pin Marker -->
+                    <p  style="color: black;"><strong style="color: black;">Showroom Address:</strong><br style="color: black;">
+                        C, 702, 6th Main Rd, 11th Block, 2 Stage, Naagarabhaavi, Bengaluru, Karnataka 560072
+                    </p>
+                    
+                    <!-- Embedded Google Map with Pin Marker -->
+                    <div >
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0944681277435!2d77.5098988!3d12.9737329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3c2e04dde6a3%3A0x63b8c9e3f08c622a!2sA%20M%20Industries%20Home%20Theatre!5e0!3m2!1sen!2sin!4v1711725407324!5m2!1sen!2sin"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Button to open location in Google Maps -->
+                    <a href="https://www.google.com/maps/dir//C,+702,+6th+Main+Rd,+11th+Block,+11+Block,+2+Stage,+Naagarabhaavi,+Bengaluru,+Karnataka+560072/@12.9737199,77.4274969,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae3c2e04dde6a3:0x63b8c9e3f08c622a!2m2!1d77.5098988!2d12.9737329?entry=ttu"
+                       target="_blank"
+                       style="display: inline-block; 
+                              margin-top: 10px; 
+                              padding: 10px 20px; 
+                              height:250;
+                              color: white; 
+                              text-decoration: none; 
+                              border-radius: 5px;">
+                       
+                    </a>
+                    
+                
+                
+                
+       </div>
             </div>
         </div>
     </div>
