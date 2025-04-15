@@ -94,7 +94,7 @@ body{
      width:100%;
      }
   .button{
-  background:#ed145b;
+  background:#2c5364;
   display:inline-block;
   color:#fff;
   padding:15px 30px 17px 30px;
@@ -112,7 +112,7 @@ body{
   margin-top:10px;
     }
   .button_1:hover{
-  background:#ed145b;
+  background:#2c5364;
   color:#fff;
     }
   
@@ -180,11 +180,11 @@ body{
   margin-top:10px;
    }
   .tag_menu:hover{
-  color:#ed145b!important;
+  color:#2c5364!important;
   background:none!important;
    }
   .tag_menu:focus{
-  color:#ed145b!important;
+  color:#2c5364!important;
   background:none!important;
    }
   .drop_1 {
@@ -197,16 +197,16 @@ body{
   font-weight: bold!important;
   }
   .drop_1 a:hover {
-  background:#ed145b!important;
+  background:#2c5364!important;
   color:#fff!important;
   }
   .navbar .navbar-nav>.active>a {
   background: none!important;
-  color: #ed145b!important;
+  color: #2c5364!important;
   }
   .active_tab{
   background: none!important;
-  color: #ed145b!important; 
+  color: #2c5364!important; 
    }
    
   #header .drop_3 {
@@ -223,7 +223,7 @@ body{
   }
   #header .drop_3 a:hover {
   background:none;
-  color: #ed145b;
+  color: #2c5364;
   }
   /*********************header_end****************/
   
@@ -487,8 +487,8 @@ body{
   .fade-carousel .carousel-indicators > li.active{
         width:18px;
       height:18px;
-      background:#ed145b;
-      border-color:#ed145b;
+      background:#2c5364;
+      border-color:#2c5364;
     }
 
 
@@ -583,7 +583,7 @@ body{
   padding-bottom:60px; 
    }
   .albums_2i h4 a{
-  background:#ed145b;
+  background:#2c5364;
   width:70%;
   margin-left:auto;
   margin-right:auto; 
@@ -824,7 +824,7 @@ footer {
   .preview_1li1 ul li{
   display:inline-block;
   text-align:center;
-  background:#ed145b;
+  background:#2c5364;
   color:#fff;
   width:100px;
   height:100px;
@@ -1093,7 +1093,7 @@ footer {
   #Contact{
   padding-top:60px;
   padding-bottom:60px;
-  background:#ed145b21; 
+  background:#2c5364; 
    }
   .Contact_1r .form-control{
   height:50px;
@@ -1102,7 +1102,7 @@ footer {
   background:#fff; 
   box-shadow:none;
   font-size:16px;
-  border-bottom:3px solid #ed145b;
+  border-bottom:3px solid #2c5364;
    }
   .Contact_1r .form_1{
   height:150px; 
@@ -1301,7 +1301,7 @@ h1 .highlight {
   #footer_bottom{
   padding-top:15px;
   padding-bottom:15px;
-  background:#ed145b21;
+  background: #2c5364;
    }
    
   /* footer social icons */
@@ -1406,16 +1406,16 @@ h1 .highlight {
       border:none;
   }
   .navbar-toggle{
-   background:#ed145b;
+   background:#2c5364;
    border:none;
    border-radius:0; 
    margin-top:9px;
     }
   .navbar-toggle:hover{
-   background:#ed145b!important; 
+   background:#2c5364!important; 
     }
   .navbar-toggle:focus{
-   background:#ed145b!important; 
+   background:#2c5364!important; 
     }
   .navbar-toggle .icon-bar{
    background:#fff!important; 
@@ -1424,7 +1424,7 @@ h1 .highlight {
   position:static;
   text-align:center;
   width:100%;
-  background: #ed145b;
+  background: #2c5364;
   padding:0;
     }
   .dropdown-menu{

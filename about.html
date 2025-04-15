@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +46,7 @@
         <div class="container">
             <div class="navbar-header page-scroll">
                 <!-- Mobile Menu Toggle Button -->
-                <button type="button" class="navbar-toggle" onclick="toggleSidebar()">
+                <button type="button" class="navbar-toggle" onclick="toggleSidebar()" style="background-color: #2c5364;" >
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -180,396 +178,538 @@
 
 
 </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission & Vision</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fc;
+      color: #333;
+    }
 
-<section id="about" class="about-section">
-    <div class="container">
-        <div class="section-header">
-            <h1>About <span style="color: #000; ">A M Industries</span></h1>
-            <p class="subtitle" style="color: black">At A M Industries, we specialize in transforming ordinary spaces into extraordinary cinematic experiences. Based in Bangalore, we are passionate about delivering premium home theater solutions that combine cutting-edge technology with elegant design.</p>
-        </div>
+    .intro-section {
+      text-align: center;
+      padding: 100px 10% 60px;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+    }
 
-        <div class="intro-box">
-            <div class="intro-content">
-                <p style="font-size: medium;"> With years of expertise in the AV industry, our team works closely with homeowners, architects, and interior designers to create custom setups that match both lifestyle and budget. From high-performance projectors and immersive surround sound systems to acoustic treatments and automation, every detail is crafted to perfection.
-                    What sets us apart is our commitment to quality, personalized service, and a seamless customer experience—from consultation to installation and beyond. Whether it’s a cozy media room or a full-scale private cinema, we bring your vision to life.
-                    Experience the magic of movies at home with A M Industries—where entertainment meets excellence.
+    .intro-section h1 {
+      font-size: 42px;
+      color: #1d3557;
+      margin-bottom: 25px;
+    }
 
+    .intro-section p {
+      font-size: 18px;
+      color: #444;
+      max-width: 950px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
 
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 10%;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: white;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+      margin: 40px auto;
+      border-radius: 20px;
+      max-width: 1200px;
+      transition: transform 0.3s ease;
+    }
 
+    .section:hover {
+      transform: scale(1.01);
+    }
 
-                </p>
-            </div>
-        </div>
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
 
-        <section class="mission-vision-section">
-            <div class="mission-block">
-              <!-- <img src="your-mission-icon.png" alt="Mission Icon" class="icon"> -->
-              <h2 >OUR MISSION</h2>
-              <p >"At A M Industries, our mission is to redefine home entertainment by delivering exceptional home theater solutions that blend innovation, performance, and aesthetics. We aim to create immersive audiovisual experiences that bring families together and turn everyday moments into unforgettable memories. Through dedication to quality, personalized service, and continuous innovation, we strive to be the trusted name in home cinema excellence."</p>
-            </div>
-          
-            <div class="vision-block">
-              <!-- <img src="your-vision-icon.png" alt="Vision Icon" class="icon"> -->
-              <h2>OUR VISION</h2>
-              <p>"To be the leading home theater solutions provider in India, known for transforming living spaces into world-class cinematic environments. We envision a future where every home can enjoy the magic of theater-quality entertainment, powered by innovation, craftsmanship, and a passion for perfection."</p>
-            </div>
-          </section>
-</section>
-<style>
-   .mission-vision-section {
-  padding: 40px 20px;
-  background: white;
+    .text-content {
+      flex: 1 1 45%;
+    }
+
+    .text-content h2 {
+      font-size: 36px;
+      color: #1d3557;
+      margin-bottom: 15px;
+    }
+
+    .text-content p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .image-content {
+      flex: 1 1 45%;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 30px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+    }
+
+    .image-content img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .section, .section.reverse {
+        flex-direction: column;
+        padding: 50px 5%;
+      }
+
+      .text-content h2 {
+        font-size: 28px;
+      }
+
+      .image-content img {
+        max-width: 90%;
+      }
+    }
+    .section {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 50px;
+  justify-content: space-between;
+  padding: 20px 4%; /* Reduced from 80px 10% */
+  gap: 20px; /* Reduced from 40px */
+  flex-wrap: wrap;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+  margin: 20px auto; /* Reduced from 40px */
+  border-radius: 20px;
+  max-width: 1200px;
+  transition: transform 0.3s ease;
 }
-
-.mission-block, .vision-block {
-  width: 90%; /* wider than before */
-  max-width: 1000px; /* limit max width for very large screens */
-  background: #fff;
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+.intro-section {
   text-align: center;
+  padding: 60px 6% 40px; /* Reduced top and bottom padding */
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
 }
 
-.icon {
-  width: 40px;
-  margin-bottom: 15px;
+.intro-section h1 {
+  font-size: 36px; /* Slightly smaller */
+  color: #1d3557;
+  margin-bottom: 20px; /* Reduced spacing */
 }
 
-h2 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-.mission-block h2,
-.vision-block h2 {
-  font-weight: 700;        /* Makes it bold */
-  font-size: 2.5rem;       /* Adjust size if needed */
-  color: #222;             /* Slightly darker for better readability */
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-
-/* p {
-  font-size: 1.1rem;
+.intro-section p {
+  font-size: 16.5px; /* Slightly smaller for compactness */
   color: #444;
-  line-height: 1.7;
-} */
+  max-width: 850px; /* Slightly narrower width */
+  margin: 0 auto;
+  line-height: 1.6; /* Reduced from 1.8 */
+}
+.intro-section p {
+  font-size: 16.5px;
+  color: #444;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: justify; /* 👈 Add this line */
+}
 
 
-</style>
-<section class="process-modern">
-    <div class="container">
-      <div class="section-header">
-        <h1 style="font-size: 4rem ;">Our <span style="font-weight: bold;">Process</span></h1>
-        <p class="subtitle">At A M Industries, we believe that a great home theater begins with a well-planned process. From the first consultation to the final reveal, we ensure a smooth, personalized, and detail-driven experience.</p>
+  </style>
+</head>
+<body>
+
+  <!-- Company Intro Section -->
+  <div class="intro-section">
+    <h1>Welcome to A M Industries</h1>
+    <p>
+      At A M Industries, we specialize in transforming ordinary spaces into extraordinary cinematic experiences. Based in Bangalore, we are passionate about delivering premium home theater solutions that combine cutting-edge technology with elegant design.
+     <br> <br></p>
+     <p> With years of expertise in the AV industry, our team works closely with homeowners, architects, and interior designers to create custom setups that match both lifestyle and budget. From high-performance projectors and immersive surround sound systems to acoustic treatments and automation, every detail is crafted to perfection.
+      <br><br></p>
+      <p>What sets us apart is our commitment to quality, personalized service, and a seamless customer experience—from consultation to installation and beyond. Whether it’s a cozy media room or a full-scale private cinema, we bring your vision to life. Experience the magic of movies at home with A M Industries—where entertainment meets excellence.
+    </p>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="section">
+    <div class="text-content">
+      <h2>Our Mission</h2>
+      <p>
+        "At A M Industries, our mission is to redefine home entertainment by delivering exceptional home theater solutions that blend innovation, performance, and aesthetics. We aim to create immersive audiovisual experiences that bring families together and turn everyday moments into unforgettable memories. Through dedication to quality, personalized service, and continuous innovation, we strive to be the trusted name in home cinema excellence."
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="img/mission1.jpeg" alt="Mission Image">
+    </div>
+  </div>
+
+  <!-- Vision Section -->
+  <div class="section reverse">
+    <div class="text-content">
+      <h2>Our Vision</h2>
+      <p>
+        "To be the leading home theater solutions provider in India, known for transforming living spaces into world-class cinematic environments. We envision a future where every home can enjoy the magic of theater-quality entertainment, powered by innovation, craftsmanship, and a passion for perfection."
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="img/vision.jpeg" alt="Vision Image">
+    </div>
+  </div>
+
+
+
+</body>
+</html>
+
+<div class="container">
+    <div class="section-header">
+      <h1 style="font-size: 4rem ;">Our <span style="font-weight: bold;">Process</span></h1>
+      <p class="subtitle">At A M Industries, we believe that a great home theater begins with a well-planned process. From the first consultation to the final reveal, we ensure a smooth, personalized, and detail-driven experience.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-item">
+        <div class="process-number">01</div>
+        <div class="process-content">
+          <h3>Consultation</h3>
+          <p>We start by understanding your space, lifestyle, preferences, and budget. Whether it’s a dedicated cinema room or a multi-purpose space, we listen to your vision.</p>
+        </div>
       </div>
-  
-      <div class="process-steps">
-        <div class="process-item">
-          <div class="process-number">01</div>
-          <div class="process-content">
-            <h3>Consultation</h3>
-            <p>We start by understanding your space, lifestyle, preferences, and budget. Whether it’s a dedicated cinema room or a multi-purpose space, we listen to your vision.</p>
-          </div>
+
+      <div class="process-item">
+        <div class="process-number">02</div>
+        <div class="process-content">
+          <h3>Design & Planning</h3>
+          <p>Our experts create a customized layout, selecting the right audio-visual equipment, acoustic treatments, lighting, and automation systems to match your needs and aesthetics.</p>
         </div>
-  
-        <div class="process-item">
-          <div class="process-number">02</div>
-          <div class="process-content">
-            <h3>Design & Planning</h3>
-            <p>Our experts create a customized layout, selecting the right audio-visual equipment, acoustic treatments, lighting, and automation systems to match your needs and aesthetics.</p>
-          </div>
+      </div>
+
+      <div class="process-item">
+        <div class="process-number">03</div>
+        <div class="process-content">
+          <h3>Installation</h3>
+          <p>Our skilled technicians handle the entire installation process with precision—wiring, mounting, calibration, and integration—ensuring everything is done to the highest standards.</p>
         </div>
-  
-        <div class="process-item">
-          <div class="process-number">03</div>
-          <div class="process-content">
-            <h3>Installation</h3>
-            <p>Our skilled technicians handle the entire installation process with precision—wiring, mounting, calibration, and integration—ensuring everything is done to the highest standards.</p>
-          </div>
+      </div>
+
+      <div class="process-item">
+        <div class="process-number">04</div>
+        <div class="process-content">
+          <h3>Testing & Calibration</h3>
+          <p>We fine-tune audio and video settings for optimal performance, delivering a true cinematic experience right in your home.</p>
         </div>
-  
-        <div class="process-item">
-          <div class="process-number">04</div>
-          <div class="process-content">
-            <h3>Testing & Calibration</h3>
-            <p>We fine-tune audio and video settings for optimal performance, delivering a true cinematic experience right in your home.</p>
-          </div>
-        </div>
-  
-        <div class="process-item">
-          <div class="process-number">05</div>
-          <div class="process-content">
-            <h3>Handover & Training</h3>
-            <p>Once everything is set, we walk you through the entire system, ensuring you’re comfortable with how everything works. We’re also just a call away for after-sales support.</p>
-          </div>
+      </div>
+
+      <div class="process-item">
+        <div class="process-number">05</div>
+        <div class="process-content">
+          <h3>Handover & Training</h3>
+          <p>Once everything is set, we walk you through the entire system, ensuring you’re comfortable with how everything works. We’re also just a call away for after-sales support.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 <style>
-    .process-modern {
-  padding: 80px 20px;
-  background-color: #f9f9f9;
+  .process-modern {
+padding: 40px 20px;
+background-color: #f9f9f9;
 }
 
 .section-header {
-  text-align: center;
-  margin-bottom: 60px;
+text-align: center;
+margin-bottom: 30px;
 }
 
 .section-header h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
+font-size: 3rem;
+margin-bottom: 15px;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: bold;
+font-family: 'Poppins', sans-serif;
+font-size: 18px;
+
 }
 
 .section-header h1 span {
-  color: #2c5364;
+color: #2c5364;
 }
 
 .section-header .subtitle {
-  font-size: 2rem;
-  color: #555;
-  font-style: italic;
-  max-width: 800px;
-  margin: 0 auto;
-  font-weight: bold;
+font-size: 2rem;
+color: #555;
+/* font-style: italic; */
+max-width: 800px;
+margin: 0 auto;
+/* font-weight: bold; */
+font-family: 'Poppins', sans-serif;
 }
 
 .process-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 25px;
+max-width: 900px;
+margin: 0 auto;
 }
 
 .process-item {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
+display: flex;
+gap: 30px;
+align-items: flex-start;
 }
 
 .process-number {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #2c5364;
-  background: #e0ecf0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+font-size: 3rem;
+font-weight: bold;
+color: #2c5364;
+background: #e0ecf0;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
 }
 
 .process-content {
-  background: white;
-  padding: 20px 25px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  flex-grow: 1;
+background: white;
+padding: 15px 20px;
+border-radius: 10px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+flex-grow: 1;
 }
 
 .process-content h3 {
-  margin: 0 0 10px;
-  color: #2c5364;
-  font-size: 1.9rem;
-  font-weight: bold;
+margin: 0 0 10px;
+color: #2c5364;
+font-size: 1.9rem;
+font-weight: bold;
+font-family: 'Poppins', sans-serif;
+font-size: 18px;
+line-height: 1.8;
 }
 
 .process-content p {
-  margin: 0;
-  color: #666;
-  line-height: 1.6;
+margin: 0;
+color: #666;
+line-height: 1.6;
+font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size: 18px;
+line-height: 1.8;
 }
 
 @media (max-width: 768px) {
-  .process-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .process-number {
-    margin-bottom: 10px;
-  }
-
-  .process-content {
-    padding: 20px;
-  }
+.process-item {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+.process-number {
+  margin-bottom: 10px;
+}
+
+.process-content {
+  padding: 20px;
+}
+}
+
+
+
 
 </style>  
 
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="img/logoWhatsApp Image 2025-02-19 at 18.34.35_62c07136.jpg" alt="Company Logo">
-        </div>
-        <div class="footer-info">
-          <div class="footer-sections">
-            <div class="footer-section contact" style="text-align: left; text-align: center;">
-                <h3>Contact</h3>
-                <p><i class="fas fa-map-marker-alt"></i> No. 702/C 6th Main, Nagarbhavi 2nd Stage, 11th Block, Bangalore-560072, Karnataka, INDIA</p>
-                  <p><i class="fas fa-envelope"></i> amindustries@hotmail.com</p>
-                  <p><i class="fas fa-phone"></i> +91 9886041300</p>
+ 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logoWhatsApp Image 2025-02-19 at 18.34.35_62c07136.jpg" alt="Company Logo">
             </div>
-            <div class="footer-section about">
-                <h3>About</h3>
-                <ul>
-                    <li><i class="fas fa-chevron-right"></i><a href="about.html">About Us</a></li>
-                    <!-- <li><a href="">Services</a></li> -->
-                    <li><i class="fas fa-chevron-right"></i><a href="project.html">Projects</a></li>
-                    <li><i class="fas fa-chevron-right"></i><a href="Contact.html">Contact Us</a></li>
-                </ul>
+            <div class="footer-info">
+              <div class="footer-sections">
+                <div class="footer-section contact" style="text-align: left; text-align: center;">
+                    <h3>Contact</h3>
+                    <p ><i class="fas fa-map-marker-alt"></i> No. 702/C 6th Main, Nagarbhavi 2nd Stage, 11th Block, Bangalore-560072, Karnataka, INDIA</p>
+                      <p ><a href="mailto:amindustries@hotmail.com?subject=Inquiry&body=Hello,%0D%0A%0D%0AI would like to inquire about..." style="color: white;">
+                        <i class="fas fa-envelope" style="color: white;"></i> amindustries@hotmail.com
+                      </a></p>
+                      <p>
+                        <a href="tel:+919886041300" class="phone-link">
+                          <i class="fas fa-phone"></i> +91 9886041300
+                        </a>
+                      </p>
+                </div>
+                <div class="footer-section about">
+                    <h3>About</h3>
+                    <ul>
+                        <li><i class="fas fa-chevron-right"></i><a href="about.html">About Us</a></li>
+                        <!-- <li><a href="">Services</a></li> -->
+                        <li><i class="fas fa-chevron-right"></i><a href="project.html">Projects</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <style>
+                  .phone-link {
+                    color: inherit; /* Keeps original text color */
+                    text-decoration: none; /* Removes underline */
+                    display: inline-flex; /* Aligns icon and text nicely */
+                    align-items: center;
+                    gap: 8px; /* Space between icon and number */
+                  }
+                  
+                  .phone-link:hover {
+                    color: white; /* Blue color on hover (optional) */
+                    /* text-decoration: underline; Underline on hover (optional) */
+                  }
+                  </style>
+                <!-- <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li> -->
+                        <!-- <li><a href="#">Blog & News</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Clients</a></li> -->
+                    <!-- </ul>
+                </div> -->
             </div>
-            <!-- <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Contact Us</a></li> -->
-                    <!-- <li><a href="#">Blog & News</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Clients</a></li> -->
-                <!-- </ul>
-            </div> -->
-        </div>
-        </div>
-        <!-- <div class="footer-bottom"> -->
-            <!-- <ul>
-                <li><a href="#">Terms and Conditions</a></li>
-                <li><a href="#">Shipping & Delivery</a></li>
-                <li><a href="#">Refund and Returns Policy</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul> -->
-            <!-- <p>&copy; 2024 Pink Noise Professionals. All rights reserved.</p> -->
-          
+            </div>
+            <!-- <div class="footer-bottom"> -->
+                <!-- <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Refund and Returns Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul> -->
+                <!-- <p>&copy; 2024 Pink Noise Professionals. All rights reserved.</p> -->
+              
+            <!-- </div> -->
         <!-- </div> -->
-    <!-- </div> -->
-    <div class="footer-section social">
-        <h3>Follow Us</h3>
-       <ul>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+           <ul>
         <li><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1Gv5UtaAVc/?mibextid=wwXIfr" target="_blank">Facebook</a></li>
-        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/amindustries_2008?igsh=d2t3Ynp0bGQ5NDl2&utm_source=qr " target="_blank">Instagram</a></li>
-        <li><i class="fab fa-linkedin-in"></i> <a href="#" target="_blank">LinkedIn</a></li>
+          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/amindustries_official?utm_source=qr " target="_blank">Instagram</a></li>
+        <li><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/a-m-industries-home-theatre-showroom-8a151335b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " target="_blank">LinkedIn</a></li>
         <li><i class="fas fa-globe"></i> <a href="index.html" target="_blank">Website</a></li>
        
     </ul>
-    </div>
-    
-  </footer>
-  <!-- <div class="footer-bottom"> -->
-    <!-- <ul>
-        <li><a href="#">Terms and Conditions</a></li>
-        <li><a href="#">Shipping & Delivery</a></li>
-        <li><a href="#">Refund and Returns Policy</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-    </ul> -->
-    <!-- <p>&copy; 2024 Pink Noise Professionals. All rights reserved.</p> -->
-  
-  <!-- </div>
-  </div> -->
-  <section id="footer_bottom"  style="background: #000; color: #fff; padding: 10px 0;">
-   <div class="container" style="background-color: #000;">
-    <div class="row">
-      <div class="footer_bottom_1 text-center clearfix"  style="background: #000; color: #fff; padding: 10px 0;">
-       <div class="col-sm-12">
-        <p class="mgt col_5" style="background-color: #000; "> © 2025 Your Website Name. All Rights Reserved | Design by <a class="col_1" href="https://nijith1713.wixsite.com/shashwatha-groups">Shashwatha Groups</a></p>
+        </div>
+        
+      </footer>
+      <!-- <div class="footer-bottom"> -->
+        <!-- <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Refund and Returns Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul> -->
+        <!-- <p>&copy; 2024 Pink Noise Professionals. All rights reserved.</p> -->
+      
+      <!-- </div>
+      </div> -->
+      <section id="footer_bottom"  style="background: #000; color: #fff; padding: 10px 0;">
+       <div class="container">
+        <div class="row">
+          <div class="footer_bottom_1 text-center clearfix"  style="background: #000; color: #fff; padding: 10px 0;">
+           <div class="col-sm-12">
+            <p class="mgt col_5"> © 2025 A M Industries. All Rights Reserved | Designed by  <a class="col_1" href="https://nijith1713.wixsite.com/shashwatha-groups">Shashwatha Groups</a></p>
+           </div>
+         </div>
+        </div>
+        
        </div>
-     </div>
-    </div>
-    
-   </div>
-  </section>
-  
-  <style>
-    .footer {
-        background: #000;
-        color: #fff;
-        padding: 40px 20px;
-        font-size: 14px;
-    }
-    .footer-container {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center; */
-        display: flex;
-          justify-content: space-between;
-          align-items: center;
-          text-align: left;
-          max-width: 1200px;
-          margin: auto;
-          background-color: black;
-    }
-    .footer-logo img {
-        width: 200px;
-        margin-bottom: 20px;
-    }
-    .footer-info {
-        /* display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 1200px;
-        text-align: left; */
-        flex: 1;
-    }
-    .footer-sections {
-          display: flex;
-          justify-content: space-between;
-      }
-    .footer-section {
-        margin: 20px;
-        /* flex:1; */
-    }
-    .footer-section h3 {
-        color: wheat;
-    }
-    .footer-section ul {
-        list-style: none;
-        padding: 0;
-    }
-    .footer-section ul li a {
-        color: #fff;
-        text-decoration: none;
-    }
-    .footer-bottom {
-        margin-top: 20px;
-        text-align: center;
-        border-top: 1px solid #444;
-          padding-top: 10px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-    }
-    .footer-bottom ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-    .footer-bottom ul li {
-        margin: 0 10px;
-    }
-    .footer-bottom ul li a {
-        color: #fff;
-        text-decoration: none;
-    }
-    
+      </section>
+      
+      <style>
+        .footer {
+            background: #000;
+            color: #fff;
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+        .footer-container {
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center; */
+            display: flex;
+              justify-content: space-between;
+              align-items: center;
+              text-align: left;
+              max-width: 1200px;
+              margin: auto;
+        }
+        .footer-logo img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .footer-info {
+            /* display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+            text-align: left; */
+            flex: 1;
+        }
+        .footer-sections {
+              display: flex;
+              justify-content: space-between;
+          }
+        .footer-section {
+            margin: 20px;
+            /* flex:1; */
+        }
+        .footer-section h3 {
+            color: wheat;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            margin-top: 20px;
+            text-align: center;
+            border-top: 1px solid #444;
+              padding-top: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+        }
+        .footer-bottom ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .footer-bottom ul li {
+            margin: 0 10px;
+        }
+        .footer-bottom ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
   .social-container {
     text-align: center;
     margin-bottom: 20px;
@@ -642,7 +782,6 @@ h2 {
 
 
 
-
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -674,30 +813,30 @@ h2 {
         margin-top: 20px;
     }
 }
+      </style>
+      
+      <script>
+          $(document).ready(function() {              
+          $('i.glyphicon-thumbs-up, i.glyphicon-thumbs-down').click(function(){    
+              var $this = $(this),
+              c = $this.data('count');    
+              if (!c) c = 0;
+              c++;
+              $this.data('count',c);
+              $('#'+this.id+'-bs3').html(c);
+          });      
+          $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+              event.preventDefault();
+              $(this).ekkoLightbox();
+          });                                        
+      }); 
+      
 
-  </style>
-  
-  <script>
-      $(document).ready(function() {              
-      $('i.glyphicon-thumbs-up, i.glyphicon-thumbs-down').click(function(){    
-          var $this = $(this),
-          c = $this.data('count');    
-          if (!c) c = 0;
-          c++;
-          $this.data('count',c);
-          $('#'+this.id+'-bs3').html(c);
-      });      
-      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-          event.preventDefault();
-          $(this).ekkoLightbox();
-      });                                        
-  }); 
-
-
-    
+      
+     
    
 
-  function toggleSidebar() {
+      function toggleSidebar() {
     document.getElementById("sidebar").classList.toggle("open");
 }
 
@@ -706,12 +845,8 @@ function toggleDropdown(event) {
     event.target.nextElementSibling.classList.toggle("open");
 }
 
-  
-      </script>
-  </body>
-   
-  </html>
-  
+
+          </script>
 
 
 
@@ -750,7 +885,7 @@ function toggleDropdown(event) {
     }
 </style>
 
-  </body>
-   
-  </html>
-  
+      </body>
+       
+      </html>
+      

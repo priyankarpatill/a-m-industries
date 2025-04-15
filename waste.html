@@ -1,145 +1,314 @@
-<section class="process-modern">
-    <div class="container">
-      <div class="section-header">
-        <h1>Our <span>Process</span></h1>
-        <p class="subtitle">At A M Industries, we believe that a great home theater begins with a well-planned process. From the first consultation to the final reveal, we ensure a smooth, personalized, and detail-driven experience.</p>
-      </div>
-  
-      <div class="process-steps">
-        <div class="process-item">
-          <div class="process-number">01</div>
-          <div class="process-content">
-            <h3>Consultation</h3>
-            <p>We start by understanding your space, lifestyle, preferences, and budget. Whether it’s a dedicated cinema room or a multi-purpose space, we listen to your vision.</p>
-          </div>
-        </div>
-  
-        <div class="process-item">
-          <div class="process-number">02</div>
-          <div class="process-content">
-            <h3>Design & Planning</h3>
-            <p>Our experts create a customized layout, selecting the right audio-visual equipment, acoustic treatments, lighting, and automation systems to match your needs and aesthetics.</p>
-          </div>
-        </div>
-  
-        <div class="process-item">
-          <div class="process-number">03</div>
-          <div class="process-content">
-            <h3>Installation</h3>
-            <p>Our skilled technicians handle the entire installation process with precision—wiring, mounting, calibration, and integration—ensuring everything is done to the highest standards.</p>
-          </div>
-        </div>
-  
-        <div class="process-item">
-          <div class="process-number">04</div>
-          <div class="process-content">
-            <h3>Testing & Calibration</h3>
-            <p>We fine-tune audio and video settings for optimal performance, delivering a true cinematic experience right in your home.</p>
-          </div>
-        </div>
-  
-        <div class="process-item">
-          <div class="process-number">05</div>
-          <div class="process-content">
-            <h3>Handover & Training</h3>
-            <p>Once everything is set, we walk you through the entire system, ensuring you’re comfortable with how everything works. We’re also just a call away for after-sales support.</p>
-          </div>
+<section class="clients-section">
+    <h2 class="centered-title">Our Clients</h2>
+    <div class="clients-container">
+      <div class="clients-wrapper">
+        <div class="clients-grid" id="clientsGrid">
+          <div class="client-card"><img src="./img/candmark landmark.png" alt="Candeur Landmark"><h3>Candeur Landmark</h3></div>
+          <div class="client-card"><img src="./img/Birla logo.jpg" alt="Birla Alokya"><h3>Birla Alokya</h3></div>
+          <div class="client-card"><img src="./img/candeur blogo.jpg" alt="Candeur Signature"><h3>Candeur Signature</h3></div>
+          <div class="client-card"><img src="./img/bmrcl logo.jpg" alt="BMRCL"><h3>BMRCL</h3></div>
+          <div class="client-card"><img src="./img/ravi basur logo.webp" alt="RBM Studio"><h3>RBM Studio</h3></div>
+          <div class="client-card"><img src="./img/swathi logo.webp" alt="Swathi Groups"><h3>Swathi Groups</h3></div>
+          <div class="client-card"><img src="./img/pragrup logo.webp" alt="Pragrup Architecture"><h3>Pragrup Architecture</h3></div>
+          <div class="client-card"><img src="./img/coffeegrove logo.webp" alt="Nexstay Coffeegrove"><h3>Nexstay Coffeegrove</h3></div>
+          <div class="client-card"><img src="./img/aditya logo.webp" alt="Aditya Groups"><h3>Aditya Groups</h3></div>
+          <div class="client-card"><img src="./img/shree krishna logo.webp" alt="Sri Krishna Institute"><h3>Sri Krishna Institute</h3></div>
+          <div class="client-card"><img src="./img/birla t logo.jpg" alt="Birla Tisya"><h3>Birla Tisya</h3></div>
         </div>
       </div>
     </div>
   </section>
+  
+  <style>
+    .clients-section {
+      padding: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .centered-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+  
+    .clients-container {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+  
+    .clients-wrapper {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .clients-grid {
+      display: flex;
+      gap: 30px;
+      padding: 15px 0;
+      will-change: transform;
+    }
+  
+    .client-card {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 150px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+  
+    .client-card img {
+      width: 150px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      filter: grayscale(100%);
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+  
+    .client-card h3 {
+      font-size: 1rem;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+  
+    .client-card:hover {
+      transform: scale(1.05);
+    }
+  
+    .client-card:hover img {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+  
+    /* Animation for desktop */
+    @media (min-width: 769px) {
+      .clients-grid {
+        animation: scrollClients 40s linear infinite;
+      }
+    }
+  
+    /* Animation for mobile */
+    @media (max-width: 768px) {
+      .clients-grid {
+        gap: 20px;
+        animation: scrollClientsMobile 30s linear infinite;
+      }
+      
+      .client-card {
+        width: 160px;
+        height: 120px;
+      }
+      
+      .client-card img {
+        width: 120px;
+        height: 80px;
+      }
+    }
+  
+    @keyframes scrollClients {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-50% - 15px));
+      }
+    }
+  
+    @keyframes scrollClientsMobile {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-50% - 10px));
+      }
+    }
+  
+    /* Pause animation on hover */
+    .clients-container:hover .clients-grid {
+      animation-play-state: paused;
+    }
+  </style>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const clientsGrid = document.getElementById("clientsGrid");
+      
+      // Duplicate the client cards for seamless looping
+      const clientCards = clientsGrid.innerHTML;
+      clientsGrid.innerHTML = clientCards + clientCards;
+      
+      // Add touch support for mobile
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      const wrapper = document.querySelector('.clients-wrapper');
+      
+      wrapper.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - wrapper.offsetLeft;
+        scrollLeft = clientsGrid.scrollLeft;
+        wrapper.style.cursor = 'grabbing';
+      });
+      
+      wrapper.addEventListener('mouseleave', () => {
+        isDown = false;
+        wrapper.style.cursor = 'grab';
+      });
+      
+      wrapper.addEventListener('mouseup', () => {
+        isDown = false;
+        wrapper.style.cursor = 'grab';
+      });
+      
+      wrapper.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - wrapper.offsetLeft;
+        const walk = (x - startX) * 2;
+        clientsGrid.scrollLeft = scrollLeft - walk;
+      });
+      
+      // Touch events for mobile
+      wrapper.addEventListener('touchstart', (e) => {
+        isDown = true;
+        startX = e.touches[0].pageX - wrapper.offsetLeft;
+        scrollLeft = clientsGrid.scrollLeft;
+      });
+      
+      wrapper.addEventListener('touchend', () => {
+        isDown = false;
+      });
+      
+      wrapper.addEventListener('touchmove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.touches[0].pageX - wrapper.offsetLeft;
+        const walk = (x - startX) * 2;
+        clientsGrid.scrollLeft = scrollLeft - walk;
+      });
+    });
+  </script>
+   <a href="#" class="brand-item"><img src="img/candmark landmark.png" alt="Candeur Landmark"><h3>Candeur Landmark</h3></a>
+   <section class="brands-section">
+    <h2 class="centered-title">Our Clients</h2>
+    <div class="brands-container">
+        <div class="brands-wrapper">
+            <div class="brands-grid" id="brandsGrid">
+                <!-- Brand items will duplicate via JavaScript -->
+            </div>
+        </div>
+    </div>
+</section>
+
 <style>
-    .process-modern {
-  padding: 80px 20px;
-  background-color: #f9f9f9;
-}
+    .brands-container {
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .brands-wrapper {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .brands-grid {
+        display: flex;
+        gap: 15px;
+        width: max-content;
+        animation: scrollItems 50s linear infinite;
+        padding: 10px 0;
+    }
+    
+    .brand-item {
+        flex: 0 0 auto;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 10px;
+        background: white;
+        padding: 15px 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+    
+    .brand-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .brand-item img {
+        width: 80%;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+    
+    .brand-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+        white-space: normal;
+        width: 100%;
+    }
+    
+    .centered-title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        color: #222;
+    }
+    
+    @keyframes scrollItems {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+</style>
 
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const brandsGrid = document.getElementById("brandsGrid");
+        const brands = [
+            { img: "./img/candmark landmark.png", name: "Candeur Landmark" },
+            { img: "./img/Birla logo.jpg", name: "Birla Alokya" },
+            { img: "./img/candeur blogo.jpg", name: "Candeur Signature" },
+            { img: "./img/bmrcl logo.jpg", name: "BMRCL" },
+            { img: "./img/ravi basur logo.webp", name: "RBM Studio" },
+            { img: "/img/swathi logo.webp", name: "Swathi Groups" },
+            { img: "./img/pragrup logo.webp", name: "Pragrup Architecture" },
+            { img: "./img/coffeegrove logo.webp", name: "Nexstay Coffeegrove" },
+            { img: "./img/aditya logo.webp", name: "Aditya Groups" },
+            { img: "./img/shree krishna logo.webp", name: "Sri Krishna Institute" },
+            { img: "./img/birla t logo.jpg", name: "Birla Tisya" }
+        ];
 
-.section-header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.section-header h1 span {
-  color: #2c5364;
-}
-
-.section-header .subtitle {
-  font-size: 1.2rem;
-  color: #555;
-  font-style: italic;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.process-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.process-item {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-}
-
-.process-number {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2c5364;
-  background: #e0ecf0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.process-content {
-  background: white;
-  padding: 20px 25px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  flex-grow: 1;
-}
-
-.process-content h3 {
-  margin: 0 0 10px;
-  color: #2c5364;
-  font-size: 1.4rem;
-}
-
-.process-content p {
-  margin: 0;
-  color: #666;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .process-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .process-number {
-    margin-bottom: 10px;
-  }
-
-  .process-content {
-    padding: 20px;
-  }
-}
-
-</style>  
+        // Add brand items (twice for seamless looping)
+        brands.forEach(brand => {
+            brandsGrid.innerHTML += `
+                <div class="brand-item">
+                    <a href="#"><img src="${brand.img}" alt="${brand.name}"></a>
+                    <div class="brand-name">${brand.name}</div>
+                </div>
+            `;
+        });
+        
+        // Duplicate for continuous scrolling
+        brandsGrid.innerHTML += brandsGrid.innerHTML;
+    });
+</script>

@@ -37,7 +37,7 @@
 
 
 <body>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body data-spy="scroll" data-target=".navbar" data-offset="50" >
         
    
     <!-- Navigation Section -->
@@ -47,7 +47,7 @@
         <div class="container">
             <div class="navbar-header page-scroll">
                 <!-- Mobile Menu Toggle Button -->
-                <button type="button" class="navbar-toggle" onclick="toggleSidebar()">
+                <button type="button" class="navbar-toggle" onclick="toggleSidebar()" style="background-color: #2c5364;;">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -183,7 +183,7 @@
 
 
 
-<section id="Contact">
+<section id="Contact" style="background-color: #2c5364;">
     <div class="container">
         <h1>Contact <span class="highlight" style="color: black;">Us</span></h1>
 
@@ -298,37 +298,27 @@
 
 
 <p  style="color: black;"><strong style="color: black;">Warehouse Address:</strong><br style="color: black;">
-    No. 2874, 8th E Cross, 14th E Main, R P C Layout, Vijayanagar, 
-    Bangalore-560040, Karnataka, INDIA
+    2882-2894, 14th E Main Rd, Nethaji Layout, Deepanjali Nagar, Bengaluru, Karnataka 560040
 </p>
 
 <!-- Embedded Google Map with Pin Marker -->
-<div >
+<!-- Embedded Google Map -->
+<div style="width: 100%; height: 300px;">
     <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.131370258719!2d77.53251577491826!3d12.961999387392025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f2a4cc8f9d3%3A0x77e093421b7ed20a!2sNo.%202874%2C%208th%20E%20Cross%2C%2014th%20E%20Main%2C%20RPC%20Layout%2C%20Vijayanagar%2C%20Bengaluru%2C%20Karnataka%20560040!5e0!3m2!1sen!2sin!4v1712644000123!5m2!1sen!2sin"
-
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
+      width="100%"
+      height="300"
+      frameborder="0"
+      style="border:0"
+      src="https://www.google.com/maps?q=2882-2894,+14th+E+Main+Rd,+Nethaji+Layout,+Deepanjali+Nagar,+Bengaluru,+Karnataka+560040&output=embed"
+      allowfullscreen>
     </iframe>
-</div>
+  </div>
+  
 
 <!-- Button to open location in Google Maps -->
-<a href="https://www.google.com/maps/place/No.+2874,+8th+E+Cross,+14th+E+Main,+RPC+Layout,+Vijayanagar,+Bengaluru,+Karnataka+560040/@12.9619994,77.5325158,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3f2a4cc8f9d3:0x77e093421b7ed20a!8m2!3d12.9619994!4d77.5347045!16s%2Fg%2F11c58txjs_?entry=ttu"
-   target="_blank"
-   style="display: inline-block; 
-          margin-top: 10px; 
-          padding: 10px 20px; 
-          height:250;
-          
-          color: white; 
-          text-decoration: none; 
-          border-radius: 5px;">
-   
-</a>
+
+
+
 
 
 
@@ -373,8 +363,14 @@
                 <p><strong>Address / Experience Center:</strong><br>
                     No. 702/C 6th Main, Nagarbhavi 2nd Stage, 11th Block, Bangalore-560072, Karnataka, INDIA</p>
                 <p><strong>Website:</strong> <a href="https://home-theatre.co.in/">www.home-theatre.co.in</a></p>
-                <p><strong>Email:</strong>amindustries@hotmail.com</p>
-                <p><strong>Phone:</strong> +91 9886041300, 9845850350, 08023184399</p>
+                <p ><strong>Email:</strong><a href="mailto:amindustries@hotmail.com?subject=Inquiry&body=Hello,%0D%0A%0D%0AI would like to inquire about..." style="color: black;">
+                    </i> amindustries@hotmail.com
+                  </a></p>
+                  <p><strong>Phone:</strong> 
+                    <a href="tel:+919886041300">+91 9886041300</a>, 
+                    <a href="tel:+919845850350">9845850350</a>, 
+                    <a href="tel:+9108023184399">08023184399</a>
+                  </p>
                 <p><strong>Business Hours:</strong><br>
                    Monday to Saturday – 10:30 AM to 7:30 PM<br>
                    Sunday – Holiday</p>
@@ -389,13 +385,13 @@
                             </td>
                             <td style="padding: 10px;">
                                 <a style="color: red;"><i class="fab fa-instagram"></i></a> 
-                                <a href="https://www.instagram.com/amindustries_2008?igsh=d2t3Ynp0bGQ5NDl2&utm_source=qr" target="_blank" style="color: black;">Instagram</a>
+                                <a href="https://www.instagram.com/amindustries_official?utm_source=qr" target="_blank" style="color: black;">Instagram</a>
                             </td>
                         </tr>
                         <tr>
                             <td style="padding: 10px;">
                                 <a style="color: red;"><i class="fab fa-linkedin-in"></i></a> 
-                                <a href="#" target="_blank" style="color: black;">LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/a-m-industries-home-theatre-showroom-8a151335b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" style="color: black;">LinkedIn</a>
                             </td>
                             <td style="padding: 10px;">
                                 <a style="color: red;"><i class="fas fa-globe"></i></a> 
@@ -406,6 +402,17 @@
                     
             
                 </div>
+                <style>
+                    a[href^="tel:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+a[href^="tel:"]:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+                </style>
                 
                   
                    <!-- <p style="color: black;"><strong style="color: black;">Showroom Address:</strong><br>
@@ -582,7 +589,7 @@
 
 </style>
 
-<section id="footer_bottom">
+<section id="footer_bottom" style="background-color: #2c5364;">
     <div class="container">
      <div class="row">
        <div class="footer_bottom_1 text-center clearfix">

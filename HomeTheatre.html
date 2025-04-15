@@ -42,7 +42,7 @@
         <div class="container">
             <div class="navbar-header page-scroll">
                 <!-- Mobile Menu Toggle Button -->
-                <button type="button" class="navbar-toggle" onclick="toggleSidebar()">
+                <button type="button" class="navbar-toggle" onclick="toggleSidebar()" style="background-color: #2c5364;;">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -357,41 +357,175 @@
         </div>
     </div>
 </div>
-
 <section class="audio-services">
     <div class="container">
+      <div class="section-header">
+        <h2>Audio Services</h2>
         <hr class="section-divider">
-        <div class="row">
-            <div class="service-item">
-                <img src="img/a001.webp" alt="Living Room Audio" style="width: 300px; height: 200px;">
-                <h3>Living Room Audio</h3>
-                <p>Turn your living room into a multiplex.</p>
-            </div>
-            <div class="service-item">
-                <img src="img/a003.webp" alt="Sound Bar" style="width: 300px; height: 200px;">
-                <h3>Sound Bar</h3>
-                <p>A little tweak to your TV audio can transform your TV watching experience.</p>
-            </div>
-            <div class="service-item">
-                <img src="img/a002.webp" alt="Stereo System" style="width: 300px; height: 200px;">
-                <h3>Stereo System</h3>
-                <p>With the main speakers, experience music that resonates within.</p>
-            </div>
-            <div class="service-item">
-                <img src="img/Untitled-1-1.webp" alt="Garden Theater" style="width: 300px; height: 200px;">
-                <h3>Garden Theater</h3>
-                <p>You will never have to choose between your favorite entertainment.</p>
-            </div>
-            <div class="service-item">
-                <img src="img/Untitled-2.webp" alt="Multi-Room Audio" style="width: 300px; height: 200px;">
-                <h3>Multi-Room Audio</h3>
-                <p>Connect all the speakers in your Home for an immersive experience.</p>
-            </div>
+      </div>
+      
+      <!-- First Row - 3 services -->
+      <div class="services-row">
+        <div class="service-card">
+          <div class="service-image">
+            <img src="img/a001.webp" alt="Living Room Audio">
+          </div>
+          <h3>Living Room Audio</h3>
+          <p>Turn your living room into a multiplex.</p>
         </div>
+        
+        <div class="service-card">
+          <div class="service-image">
+            <img src="img/a003.webp" alt="Sound Bar">
+          </div>
+          <h3>Sound Bar</h3>
+          <p>A little tweak to your TV audio can transform your TV watching experience.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-image">
+            <img src="img/a002.webp" alt="Stereo System">
+          </div>
+          <h3>Stereo System</h3>
+          <p>With the main speakers, experience music that resonates within.</p>
+        </div>
+      </div>
+      
+      <!-- Second Row - 2 centered services -->
+      <div class="services-row centered-row">
+        <div class="service-card">
+          <div class="service-image">
+            <img src="img/Untitled-1-1.webp" alt="Garden Theater">
+          </div>
+          <h3>Garden Theater</h3>
+          <p>You will never have to choose between your favorite entertainment.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-image">
+            <img src="img/Untitled-2.webp" alt="Multi-Room Audio">
+          </div>
+          <h3>Multi-Room Audio</h3>
+          <p>Connect all the speakers in your Home for an immersive experience.</p>
+        </div>
+      </div>
     </div>
-</section>
-
-
+  </section>
+  
+  <style>
+  .audio-services {
+    padding: 60px 0;
+    background: #f9f9f9;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .section-divider {
+    width: 80px;
+    height: 3px;
+    background: #007bff;
+    border: none;
+    margin: 15px auto;
+  }
+  
+  .services-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+  }
+  
+  .centered-row {
+    justify-content: center;
+    padding: 0 15%;
+  }
+  
+  .service-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .service-card:hover .service-image img {
+    transform: scale(1.05);
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin: 20px 20px 10px;
+    color: #333;
+  }
+  
+  .service-card p {
+    margin: 0 20px 20px;
+    color: #666;
+    flex-grow: 1;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .centered-row {
+      padding: 0 10%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-row, .centered-row {
+      gap: 20px;
+      padding: 0;
+    }
+    
+    .service-card {
+      width: 100%;
+      max-width: 350px;
+    }
+    
+    .service-image {
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .audio-services {
+      padding: 40px 20px;
+    }
+    
+    .service-card {
+      max-width: 100%;
+    }
+  }
+  </style>
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
@@ -402,9 +536,29 @@
             <div class="footer-section contact" style="text-align: left; text-align: center;">
                 <h3>Contact</h3>
                 <p><i class="fas fa-map-marker-alt"></i> No. 702/C 6th Main, Nagarbhavi 2nd Stage, 11th Block, Bangalore-560072, Karnataka, INDIA</p>
-                  <p><i class="fas fa-envelope"></i> amindustries@hotmail.com</p>
-                  <p><i class="fas fa-phone"></i> +91 9886041300</p>
-            </div>
+                  <p ><a href="mailto:amindustries@hotmail.com?subject=Inquiry&body=Hello,%0D%0A%0D%0AI would like to inquire about..." style="color: white;">
+                        <i class="fas fa-envelope" style="color: white;"></i> amindustries@hotmail.com
+                      </a></p>
+                      <p>
+                        <a href="tel:+919886041300" class="phone-link">
+                          <i class="fas fa-phone"></i> +91 9886041300
+                        </a>
+                      </p>
+                </div>
+                <style>
+                    .phone-link {
+                      color: inherit; /* Keeps original text color */
+                      text-decoration: none; /* Removes underline */
+                      display: inline-flex; /* Aligns icon and text nicely */
+                      align-items: center;
+                      gap: 8px; /* Space between icon and number */
+                    }
+                    
+                    .phone-link:hover {
+                      color: white; /* Blue color on hover (optional) */
+                      /* text-decoration: underline; Underline on hover (optional) */
+                    }
+                    </style>
             <div class="footer-section about">
                 <h3>About</h3>
                 <ul>
@@ -440,8 +594,8 @@
         <h3>Follow Us</h3>
        <ul>
         <li><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1Gv5UtaAVc/?mibextid=wwXIfr" target="_blank">Facebook</a></li>
-        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/amindustries_2008?igsh=d2t3Ynp0bGQ5NDl2&utm_source=qr " target="_blank">Instagram</a></li>
-        <li><i class="fab fa-linkedin-in"></i> <a href="#" target="_blank">LinkedIn</a></li>
+          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/amindustries_official?utm_source=qr " target="_blank">Instagram</a></li>
+        <li><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/a-m-industries-home-theatre-showroom-8a151335b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " target="_blank">LinkedIn</a></li>
         <li><i class="fas fa-globe"></i> <a href="index.html" target="_blank">Website</a></li>
        
     </ul>

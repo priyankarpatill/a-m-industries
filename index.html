@@ -46,7 +46,7 @@
         <div class="container">
             <div class="navbar-header page-scroll">
                 <!-- Mobile Menu Toggle Button -->
-                <button type="button" class="navbar-toggle" onclick="toggleSidebar()">
+                <button type="button" class="navbar-toggle" onclick="toggleSidebar()" style="background-color: #2c5364;">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -963,28 +963,190 @@ meta[name="viewport"]:nth-of-type(2) {
 
 
 
-  <section id="video">
+  <section id="video" style="background-color: #2c5364;">
     <div class="container">
       <div class="row">
         <div class="albums_1 text-center clearfix">
+            
           <div class="col-sm-12">
-            <p>
+            <p class="intro-paragraph" style="    font-family: 'Poppins', sans-serif;">
                 At A M Industries, we specialize in transforming ordinary spaces into extraordinary cinematic experiences. Based in Bangalore, we are passionate about delivering premium home theater solutions that combine cutting-edge technology with elegant design.
             </p>
           </div>
         </div>
-		<div class="mission-vision">
-            <div class="mission">
-                <h2>Our Mission</h2>
-                <p>“At A M Industries, our mission is to redefine home entertainment by delivering exceptional home theater solutions that blend innovation, performance, and aesthetics. We aim to create immersive audiovisual experiences that bring families together and turn everyday moments into unforgettable memories. Through dedication to quality, personalized service, and continuous innovation, we strive to be the trusted name in home cinema excellence.
+		  <!-- Mission Section -->
+           <!-- Mission Section -->
 
-                    ”</p>
+
+          <div class="section" style="margin-top: 5px;">
+            <div class="text-content">
+              <h2>Our Mission</h2>
+              <p>
+                "At A M Industries, our mission is to redefine home entertainment by delivering exceptional home theater solutions that blend innovation, performance, and aesthetics. We aim to create immersive audiovisual experiences that bring families together and turn everyday moments into unforgettable memories. Through dedication to quality, personalized service, and continuous innovation, we strive to be the trusted name in home cinema excellence."
+              </p>
             </div>
-            <div class="vision">
-                <h2>Our Vision</h2>
-                <p>“To be the leading home theater solutions provider in India, known for transforming living spaces into world-class cinematic environments. We envision a future where every home can enjoy the magic of theater-quality entertainment, powered by innovation, craftsmanship, and a passion for perfection.”</p>
+          
+            <div class="image-content">
+              <img src="img/mission1.jpeg" alt="Mission Image">
             </div>
-        </div>
+          </div>
+        
+          <!-- Vision Section -->
+          <div class="section reverse">
+            <div class="text-content">
+              <h2>Our Vision</h2>
+              <p>
+                "To be the leading home theater solutions provider in India, known for transforming living spaces into world-class cinematic environments. We envision a future where every home can enjoy the magic of theater-quality entertainment, powered by innovation, craftsmanship, and a passion for perfection."
+              </p>
+            </div>
+            <div class="image-content">
+              <img src="img/vision.jpeg" alt="Vision Image">
+            </div>
+          </div>
+
+
+          <style>
+
+body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fc;
+      color: #333;
+    }
+
+    .intro-section {
+      text-align: center;
+      padding: 100px 10% 60px;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+    }
+
+    .intro-section h1 {
+      font-size: 42px;
+      color: #1d3557;
+      margin-bottom: 25px;
+    }
+
+    .intro-section p {
+      font-size: 18px;
+      color: #444;
+      max-width: 950px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 10%;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: white;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+      margin: 40px auto;
+      border-radius: 20px;
+      max-width: 1200px;
+      /* transition: transform 0.3s ease; */
+    }
+
+    /* .section:hover {
+      transform: scale(1.01);
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    } */
+
+    .text-content {
+      flex: 1 1 45%;
+    }
+
+    .text-content h2 {
+      font-size: 36px;
+      color: #1d3557;
+      margin-bottom: 15px;
+    }
+
+    .text-content p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .image-content {
+      flex: 1 1 45%;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 30px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+    }
+
+    .image-content img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .section, .section.reverse {
+        flex-direction: column;
+        padding: 50px 5%;
+      }
+
+      .text-content h2 {
+        font-size: 28px;
+      }
+
+      .image-content img {
+        max-width: 90%;
+      }
+    }
+    .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 5%; /* Reduced from 80px 10% */
+  gap: 20px; /* Reduced from 40px */
+  flex-wrap: wrap;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+  margin: 20px auto; /* Reduced from 40px */
+  border-radius: 20px;
+  max-width: 1200px;
+  /* transition: transform 0.3s ease; */
+}
+.intro-section {
+  text-align: center;
+  padding: 60px 6% 40px; /* Reduced top and bottom padding */
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+}
+
+.intro-section h1 {
+  font-size: 36px; /* Slightly smaller */
+  color: #1d3557;
+  margin-bottom: 20px; /* Reduced spacing */
+}
+
+.intro-section p {
+  font-size: 16.5px; /* Slightly smaller for compactness */
+  color: #444;
+  max-width: 850px; /* Slightly narrower width */
+  margin: 0 auto;
+  line-height: 1.6; /* Reduced from 1.8 */
+}
+.intro-section p {
+  font-size: 16.5px;
+  color: #444;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: justify; /* 👈 Add this line */
+}
+
+          </style>
 
         <!-- <div class="team-section">
             <div class="team-member">
@@ -1174,7 +1336,7 @@ meta[name="viewport"]:nth-of-type(2) {
 
 
 <section class="brands-section">
-  <h2 class="centered-title">Our Brands</h2>
+  <h2 class="centered-title" style="font-size: 3.5rem;">Our Brands</h2>
   <div class="brands-container">
       <div class="brands-wrapper">
           <div class="brands-grid" id="brandsGrid">
@@ -1193,7 +1355,8 @@ meta[name="viewport"]:nth-of-type(2) {
               <a href="https://www.denon.com/en-us/" class="brand-item"><img src="img/Denon-Logo.wine.png" alt="Brand 13"></a>
               <a href="https://elac.com/" class="brand-item"><img src="img/elac logo.png" alt="Brand 14"></a>
               <a href="https://www.bowerswilkins.com/en-us/?srsltid=AfmBOorH-_JMqwl1iqPjC5aOL85zhnmMBvq-oSsx2DiinaTitcvSamp7" class="brand-item"><img src="img/B&W logo.svg" alt="Brand 15"></a>
-          </div>
+              <a href="https://www.bose.com/about?srsltid=AfmBOorqR9qf6BSVkBJkA2R01q5CDcO4k1FMZFQqNzDEDQoVZLXiwsRT" class="brand-item"><img src="img/bose.jpg" alt="Brand 14"></a>
+            </div>
       </div>
   </div>
 </section>
@@ -1213,7 +1376,7 @@ meta[name="viewport"]:nth-of-type(2) {
         display: flex;
         gap: 20px;
         width: max-content;
-        animation: scrollItems 50s linear infinite;
+        animation: scrollItems 40s linear infinite;
     }
     .brand-item {
     flex: 0 0 auto;
@@ -1258,111 +1421,156 @@ meta[name="viewport"]:nth-of-type(2) {
       brandsGrid.innerHTML += brandsGrid.innerHTML; // Duplicate for continuous scrolling
   });
 </script>
-
-
 <section class="clients-section">
-    <h2 class="centered-title">Our Clients</h2>
-    <div class="clients-container">
-      <div class="clients-wrapper">
-        <div class="clients-grid" id="clientsGrid">
-          <div class="client-card"><img src="./img/candmark landmark.png" alt="Candeur Landmark"><h3>Candeur Landmark</h3></div>
-          <div class="client-card"><img src="./img/Birla logo.jpg" alt="Birla Alokya"><h3>Birla Alokya</h3></div>
-          <div class="client-card"><img src="./img/candeur blogo.jpg" alt="Candeur Signature"><h3>Candeur Signature</h3></div>
-          <div class="client-card"><img src="./img/bmrcl logo.jpg" alt="BMRCL"><h3>BMRCL</h3></div>
-          <div class="client-card"><img src="./img/ravi basur logo.webp" alt="RBM Studio"><h3>RBM Studio</h3></div>
-          <div class="client-card"><img src="./img/swathi logo.webp" alt="Swathi Groups"><h3>Swathi Groups</h3></div>
-          <div class="client-card"><img src="./img/pragrup logo.webp" alt="Pragrup Architecture"><h3>Pragrup Architecture</h3></div>
-          <div class="client-card"><img src="./img/coffeegrove logo.webp" alt="Nexstay Coffeegrove"><h3>Nexstay Coffeegrove</h3></div>
-          <div class="client-card"><img src="./img/aditya logo.webp" alt="Aditya Groups"><h3>Aditya Groups</h3></div>
-          <div class="client-card"><img src="./img/shree krishna logo.webp" alt="Sri Krishna Institute"><h3>Sri Krishna Institute</h3></div>
-          <div class="client-card"><img src="./img/birla t logo.jpg" alt="Birla Tisya"><h3>Birla Tisya</h3></div>
+    <h2 class="centered-title" style="font-size: 3.5rem;">Our Clients</h2>
+    <div class="Clients-container">
+        <div class="clients-wrapper">
+            <div class="clients-grid" id="clientsGrid">
+                <div class="client-item">
+                    <a href="#"><img src="./img/candmark landmark.png" alt="Candeur Landmark"></a>
+                    <div class="brand-name">Candeur Landmark</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="./img/Birla logo.jpg" alt="Birla Alokya"></a>
+                    <div class="brand-name">Birla Alokya</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="./img/candeur blogo.jpg" alt="Candeur Signature"></a>
+                    <div class="brand-name">Candeur Signature</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="./img/bmrcl logo.jpg" alt="BMRCL"></a>
+                    <div class="brand-name">BMRCL</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="./img/ravi basur logo.webp" alt="RBM Studio"></a>
+                    <div class="brand-name">RBM Studio</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="/img/swathi logo.webp" alt="Swathi Groups"></a>
+                    <div class="brand-name">Swathi Groups</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="./img/pragrup logo.webp" alt="Pragrup Architecture"></a>
+                    <div class="brand-name">Pragrup Architecture</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="./img/coffeegrove logo.webp" alt="Nexstay Coffeegrove"></a>
+                    <div class="brand-name">Nexstay Coffeegrove</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="./img/aditya logo.webp" alt="Aditya Groups"></a>
+                    <div class="brand-name">Aditya Groups</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="./img/shree krishna logo.webp" alt="Sri Krishna Institute"></a>
+                    <div class="brand-name">Sri Krishna Institute</div>
+                </div>
+                <div class="client-item">
+                    <a href="#"><img src="./img/birla t logo.jpg" alt="Birla Tisya"></a>
+                    <div class="brand-name">Birla Tisya</div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
   </section>
+  
 <style>
+    .clients-section {
+        padding: 30px 0;
+        background: #f9f9f9;
+    }
+    
+    .centered-title {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #222;
+    }
+    
     .clients-container {
-  overflow: hidden;
-  width: 100%;
-  white-space: nowrap;
-  margin-bottom: 20px;
-}
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .clients-wrapper {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .clients-grid {
+        display: flex;
+        gap: 15px;
+        width: max-content;
+        animation: scrollItems 40s linear infinite;
+        padding: 5px 0;
+    }
+    
+    .client-item {
+        flex: 0 0 auto;
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    
+    .client-item img {
+        width: 100%;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 8px;
+    }
+    
+    .brand-name {
+        font-size: 13px;
+        font-weight: 500;
+        color: #333;
+        text-align: center;
+        line-height: 1.2;
+        width: 100%;
+    }
+    
+    @keyframes scrollItems {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+</style>
 
-.clients-wrapper {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-
-.clients-grid {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-  animation: scrollClients 50s linear infinite;
-}
-
-.client-card {
-  flex: 0 0 auto;
-  width: 200px;
-  height: 150px;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.client-card img {
-  width: 150px;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.client-card h3 {
-  font-size: 1rem;
-  color: #333;
-}
-
-.client-card:hover {
-  transform: scale(1.05);
-}
-
-.centered-title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.clients-container:hover .clients-grid {
-  animation-play-state: paused;
-}
-
-@keyframes scrollClients {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-</style>  
 <script>
-   
-  document.addEventListener("DOMContentLoaded", function () {
-    const clientsGrid = document.getElementById("clientsGrid");
-    clientsGrid.innerHTML += clientsGrid.innerHTML; // Duplicate for continuous scroll
-  });
+    document.addEventListener("DOMContentLoaded", function() {
+        const clientsGrid = document.getElementById("clientsGrid");
+        const clients = [
+            { img: "./img/candmark landmark.png", name: "Candeur Landmark" },
+            { img: "./img/Birla logo.jpg", name: "Birla Alokya" },
+            { img: "./img/candeur blogo.jpg", name: "Candeur Signature" },
+            { img: "./img/bmrcl logo.jpg", name: "BMRCL" },
+            { img: "./img/ravi basur logo.webp", name: "RBM Studio" },
+            { img: "/img/swathi logo.webp", name: "Swathi Groups" },
+            { img: "./img/pragrup logo.webp", name: "Pragrup Architecture" },
+            { img: "./img/coffeegrove logo.webp", name: "Nexstay Coffeegrove" },
+            { img: "./img/aditya logo.webp", name: "Aditya Groups" },
+            { img: "./img/shree krishna logo.webp", name: "Sri Krishna Institute" },
+            { img: "./img/birla t logo.jpg", name: "Birla Tisya" }
+        ];
 
-
+        // Add client items
+        clients.forEach(client => {
+            clientsGrid.innerHTML += `
+                <div class="client-item">
+                    <img src="${client.img}" alt="${client.name}">
+                    <div class="brand-name">${client.name}</div>
+                </div>
+            `;
+        });
+        
+        // Duplicate for continuous scrolling
+        clientsGrid.innerHTML += clientsGrid.innerHTML;
+    });
 </script>
-
-
 <section class="prestigious-clients">
     <h1>Prestigious Clients</h1>
     <div class="clients-scroll-wrapper">
@@ -1417,11 +1625,11 @@ meta[name="viewport"]:nth-of-type(2) {
       display: flex;
       gap: 20px;
       width: max-content;
-      animation: scrollClients 20s linear infinite;
+      animation: scrollClients 40s linear infinite;
   }
   
   .client-logo {
-      background: #96c8dd;
+      background: #2c5364;
       padding: 40px 50px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -1435,14 +1643,14 @@ meta[name="viewport"]:nth-of-type(2) {
   
   .client-logo h3 {
       font-size: 2.1rem;
-      color: #34495e;
+      color: white;
       font-weight: 600;
       margin: 0 0 10px;
   }
   
   .client-logo h4 {
       font-size: 1.5rem;
-      color: #7f8c8d;
+      color: cornsilk;
       font-weight: 400;
       margin: 0;
   }
@@ -1533,9 +1741,29 @@ by <a class="col_1" href="#">Ante Dapibus</a> on June 24, 2014</p>
           <div class="footer-section contact" style="text-align: left; text-align: center;">
               <h3>Contact</h3>
               <p><i class="fas fa-map-marker-alt"></i> No. 702/C 6th Main, Nagarbhavi 2nd Stage, 11th Block, Bangalore-560072, Karnataka, INDIA</p>
-                <p><i class="fas fa-envelope"></i> amindustries@hotmail.com</p>
-                <p><i class="fas fa-phone"></i> +91 9886041300</p>
-          </div>
+                <p ><a href="mailto:amindustries@hotmail.com?subject=Inquiry&body=Hello,%0D%0A%0D%0AI would like to inquire about..." style="color: white;">
+                        <i class="fas fa-envelope" style="color: white;"></i> amindustries@hotmail.com
+                      </a></p>
+                      <p>
+                        <a href="tel:+919886041300" class="phone-link">
+                          <i class="fas fa-phone"></i> +91 9886041300
+                        </a>
+                      </p>
+                </div>
+                <style>
+                    .phone-link {
+                      color: inherit; /* Keeps original text color */
+                      text-decoration: none; /* Removes underline */
+                      display: inline-flex; /* Aligns icon and text nicely */
+                      align-items: center;
+                      gap: 8px; /* Space between icon and number */
+                    }
+                    
+                    .phone-link:hover {
+                      color: white; /* Blue color on hover (optional) */
+                      /* text-decoration: underline; Underline on hover (optional) */
+                    }
+                    </style>
           <div class="footer-section about">
               <h3>About</h3>
               <ul>
@@ -1571,8 +1799,8 @@ by <a class="col_1" href="#">Ante Dapibus</a> on June 24, 2014</p>
     <h3 >Follow Us </h3>
     <ul>
         <li><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1Gv5UtaAVc/?mibextid=wwXIfr" target="_blank">Facebook</a></li>
-        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/amindustries_2008?igsh=d2t3Ynp0bGQ5NDl2&utm_source=qr " target="_blank">Instagram</a></li>
-        <li><i class="fab fa-linkedin-in"></i> <a href="#" target="_blank">LinkedIn</a></li>
+          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/amindustries_official?utm_source=qr " target="_blank">Instagram</a></li>
+        <li><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/a-m-industries-home-theatre-showroom-8a151335b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " target="_blank">LinkedIn</a></li>
         <li><i class="fas fa-globe"></i> <a href="index.html" target="_blank">Website</a></li>
        
     </ul>
